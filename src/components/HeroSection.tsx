@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GradientButton from './GradientButton';
 
@@ -11,8 +10,7 @@ const HeroSection: React.FC = () => {
             Connettere <span className="text-airstaff-blue">staffing</span> e <span className="text-airstaff-pink">aziende</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
-            AirStaff rivoluziona il modo in cui le agenzie interinali e le aziende si connettono, 
-            ottimizzando il processo di ricerca e selezione del personale.
+            Ottimizziamo l'incontro tra agenzie interinali e aziende, riducendo i tempi di ricerca e massimizzando il fulfillment dei talenti.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <GradientButton icon className="px-8 py-3 text-lg">
