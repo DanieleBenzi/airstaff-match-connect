@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         </button>
 
         {/* Desktop menu */}
-        <div className="hidden md:flex items-center space-x-10">
+        <div className="hidden md:flex items-center space-x-8">
           <Link to="/" className="text-black hover:text-airstaff-blue transition-colors font-medium">
             Home
           </Link>
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
             <Link to="/#vantaggi" className="text-black hover:text-airstaff-blue font-medium" onClick={toggleMenu}>
               Vantaggi
             </Link>
-            <GradientButton>
+            <GradientButton onClick={toggleMenu}>
               Prenota una demo
             </GradientButton>
           </div>

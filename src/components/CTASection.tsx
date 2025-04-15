@@ -5,7 +5,7 @@ import GradientButton from './GradientButton';
 const CTASection: React.FC = () => {
   return (
     <section className="py-20 px-6 md:px-12 lg:px-24">
-      <div className="container mx-auto max-w-5xl bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl shadow-xl overflow-hidden">
+      <div className="container mx-auto max-w-5xl bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl shadow-xl overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="p-10 md:p-12 lg:p-16 space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">

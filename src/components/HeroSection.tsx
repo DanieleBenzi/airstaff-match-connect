@@ -18,16 +18,16 @@ const HeroSection: React.FC = () => {
             <GradientButton icon className="px-8 py-3 text-lg">
               Inizia ora
             </GradientButton>
-            <button className="border border-black text-black px-8 py-3 rounded-md font-medium hover:bg-black hover:text-white transition-colors">
+            <button className="btn-outline px-8 py-3 text-lg font-medium">
               Scopri di più
             </button>
           </div>
         </div>
         <div className="hidden md:flex justify-center">
           <img 
-            src="/placeholder.svg" 
-            alt="AirStaff Platform" 
-            className="max-w-full h-auto rounded-lg shadow-xl" 
+            src="/lovable-uploads/ca830ce1-c78e-4909-992c-dd0aebd3cb3b.png" 
+            alt="AirStaff Platform Interface" 
+            className="max-w-full h-auto rounded-xl shadow-xl" 
           />
         </div>
       </div>

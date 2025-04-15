@@ -22,7 +22,7 @@ const GradientButton: React.FC<GradientButtonProps> = ({
     <button 
       type={type}
       className={cn(
-        "bg-gradient-cta text-white px-6 py-3 rounded-md font-medium flex items-center justify-center gap-2 transition-transform hover:scale-105",
+        "bg-gradient-cta text-white px-6 py-3 rounded-full font-medium flex items-center justify-center gap-2 transition-transform hover:scale-105",
         className
       )}
       onClick={onClick}
