@@ -33,8 +33,18 @@ const HowItWorks: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Come funziona AirStaff</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Una piattaforma innovativa che semplifica la connessione tra agenzie interinali e aziende
+            AirStaff mette in contatto agenzie interinali e aziende, risolvendo due problemi principali:
           </p>
+          <ul className="text-left max-w-3xl mx-auto mt-6 space-y-2">
+            <li className="flex items-start">
+              <span className="font-bold mr-2">1.</span>
+              <span>Aumentare il fulfillment dei lavoratori dal 45-50% attuale al 100%</span>
+            </li>
+            <li className="flex items-start">
+              <span className="font-bold mr-2">2.</span>
+              <span>Ridurre i tempi morti tra la fine di una missione e l'inizio della successiva</span>
+            </li>
+          </ul>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -74,6 +84,46 @@ const HowItWorks: React.FC = () => {
             description="Il sistema riduce i tempi di attesa tra una missione e l'altra, aumentando il fulfillment"
             position={6}
           />
+        </div>
+
+        <div className="mt-16 bg-gray-50 p-8 rounded-xl">
+          <h3 className="text-2xl font-bold mb-4">Cosa risolve AirStaff</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h4 className="text-xl font-bold mb-3">Per le agenzie interinali</h4>
+              <ul className="space-y-3">
+                <li className="flex gap-2">
+                  <span className="text-airstaff-blue">•</span>
+                  <span>Aumentare il fulfillment dei lavoratori dal 45-50% attuale al 100%</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-airstaff-blue">•</span>
+                  <span>Diminuire il turn over dei talenti riducendo i tempi morti tra mission</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-airstaff-blue">•</span>
+                  <span>Massimizzare l'efficienza del pool di talenti disponibili</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h4 className="text-xl font-bold mb-3">Per le aziende</h4>
+              <ul className="space-y-3">
+                <li className="flex gap-2">
+                  <span className="text-airstaff-pink">•</span>
+                  <span>Ridurre drasticamente i tempi di ricerca e assunzione</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-airstaff-pink">•</span>
+                  <span>Accesso a talenti preselezionati e già disponibili</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-airstaff-pink">•</span>
+                  <span>Processo semplificato con un unico punto di contatto</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
