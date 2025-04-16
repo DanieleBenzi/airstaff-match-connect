@@ -33,7 +33,7 @@ const HowItWorks: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Come funziona AirStaff</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            AirStaff mette in contatto agenzie interinali e aziende, risolvendo due problemi principali:
+            AirStaff mette in contatto agenzie interinali e Aziende, risolvendo due problemi principali:
           </p>
           <ul className="text-left max-w-3xl mx-auto mt-6 space-y-2">
             <li className="flex items-start">
@@ -51,25 +51,25 @@ const HowItWorks: React.FC = () => {
           <Step 
             icon={<Database size={24} />}
             title="Caricamento dei talenti"
-            description="Le staffing passano il loro pool di lavoratori ad AirStaff che li indicizza"
+            description="Le Staffing passano il loro pool di lavoratori ad AirStaff che li indicizza"
             position={1}
           />
           <Step 
             icon={<Search size={24} />}
             title="Ricerca dei talenti"
-            description="Le aziende tramite una ricerca basata sull'AI, cercano potenziali lavoratori, visualizzando profili anonimi"
+            description="Le Aziende tramite una ricerca basata sull'AI, cercano potenziali lavoratori, visualizzando profili anonimi"
             position={2}
           />
           <Step 
             icon={<MessageCircle size={24} />}
             title="Richiesta di contatto"
-            description="Quando l'azienda trova il lavoratore ideale, invia una richiesta di contatto alla Staffing"
+            description="Quando l'Azienda trova il lavoratore ideale, invia una richiesta di contatto alla Staffing"
             position={3}
           />
           <Step 
             icon={<Handshake size={24} />}
             title="Matching"
-            description="La staffing riceve e valuta la richiesta, decidendo se procedere con il matching"
+            description="La Staffing riceve e valuta la richiesta, decidendo se procedere con il matching"
             position={4}
           />
           <Step 
@@ -107,7 +107,7 @@ const HowItWorks: React.FC = () => {
               </ul>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h4 className="text-xl font-bold mb-3">Per le aziende</h4>
+              <h4 className="text-xl font-bold mb-3">Per le Aziende</h4>
               <ul className="space-y-3">
                 <li className="flex gap-2">
                   <span className="text-airstaff-pink">•</span>

@@ -2,6 +2,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 import Logo from './Logo';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Footer: React.FC = () => {
           <div>
             <Logo className="mb-6" />
             <p className="text-gray-400 mb-6">
-              AirStaff rivoluziona il modo in cui staffing e aziende si connettono, 
+              AirStaff rivoluziona il modo in cui Staffing e Aziende si connettono, 
               ottimizzando il processo di ricerca e selezione del personale.
             </p>
             <div className="flex space-x-4">
@@ -34,19 +35,16 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-6">Links Utili</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/" className="text-gray-400 hover:text-white transition-colors">Home</a>
+                <Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link>
               </li>
               <li>
-                <a href="/come-funziona" className="text-gray-400 hover:text-white transition-colors">Come Funziona</a>
+                <Link to="/come-funziona" className="text-gray-400 hover:text-white transition-colors">Come Funziona</Link>
               </li>
               <li>
-                <a href="/#vantaggi" className="text-gray-400 hover:text-white transition-colors">Vantaggi</a>
+                <Link to="#" className="text-gray-400 hover:text-white transition-colors">Chi Siamo</Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Chi Siamo</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a>
+                <Link to="#" className="text-gray-400 hover:text-white transition-colors">Blog</Link>
               </li>
             </ul>
           </div>
@@ -105,19 +103,19 @@ const Footer: React.FC = () => {
             <div className="mt-4 sm:mt-0">
               <ul className="flex space-x-6">
                 <li>
-                  <a href="#" className="text-gray-500 hover:text-white transition-colors">
+                  <Link to="/privacy-policy" className="text-gray-500 hover:text-white transition-colors">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-500 hover:text-white transition-colors">
+                  <Link to="/terms-conditions" className="text-gray-500 hover:text-white transition-colors">
                     Termini e Condizioni
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-500 hover:text-white transition-colors">
+                  <Link to="#" className="text-gray-500 hover:text-white transition-colors">
                     Cookie Policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

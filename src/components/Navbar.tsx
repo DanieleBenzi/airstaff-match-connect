@@ -30,9 +30,6 @@ const Navbar: React.FC = () => {
           <Link to="/come-funziona" className="text-black hover:text-airstaff-blue transition-colors font-medium">
             Come funziona
           </Link>
-          <Link to="/#vantaggi" className="text-black hover:text-airstaff-blue transition-colors font-medium">
-            Vantaggi
-          </Link>
           <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
             <GradientButton>
               Prenota una demo
@@ -48,9 +45,6 @@ const Navbar: React.FC = () => {
             </Link>
             <Link to="/come-funziona" className="text-black hover:text-airstaff-blue font-medium" onClick={toggleMenu}>
               Come funziona
-            </Link>
-            <Link to="/#vantaggi" className="text-black hover:text-airstaff-blue font-medium" onClick={toggleMenu}>
-              Vantaggi
             </Link>
             <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
               <GradientButton onClick={toggleMenu}>
