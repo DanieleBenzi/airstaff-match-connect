@@ -9,10 +9,10 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-            Connettere digitalmente Staffing e Aziende? Oggi puoi.
+            Connettere digitalmente <span className="text-airstaff-blue">Staffing</span> e <span className="text-airstaff-pink">Aziende</span>? Oggi puoi.
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
-            AirStaff è la piattaforma che mette in contatto agenzie interinali e Aziende con lo scopo di semplificare l'hiring e ridurre il turnover dei lavoratori.
+            AirStaff è la piattaforma che mette in contatto Agenzie Interinali (Staffing) e Aziende con lo scopo di semplificare l'hiring e ridurre il turnover dei lavoratori.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">

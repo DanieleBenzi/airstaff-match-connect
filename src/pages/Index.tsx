@@ -6,6 +6,7 @@ import HowItWorks from '@/components/HowItWorks';
 import Benefits from '@/components/Benefits';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
+import AISection from '@/components/AISection';
 
 const Index: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Index: React.FC = () => {
         <HeroSection />
         <HowItWorks />
         <Benefits />
+        <AISection />
         <CTASection />
       </main>
       <Footer />
