@@ -1,6 +1,7 @@
 
 import React from 'react';
 import GradientButton from './GradientButton';
+import { Link } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   return (
@@ -8,18 +9,20 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-            AirStaff - Connettere <span className="text-airstaff-blue">staffing</span> e <span className="text-airstaff-pink">aziende</span>
+            Connettere <span className="text-airstaff-blue">staffing</span> e <span className="text-airstaff-pink">aziende</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
-            Ottimizziamo l'incontro tra agenzie interinali e aziende, riducendo i tempi di ricerca e massimizzando il fulfillment dei talenti.
+            AirStaff è la piattaforma che mette in contatto agenzie interinali e Aziende con lo scopo di semplificare l'hiring e ridurre il turnover dei lavoratori.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <GradientButton icon className="px-8 py-3 text-lg">
-              Inizia ora
-            </GradientButton>
-            <button className="btn-outline px-8 py-3 text-lg font-medium">
+            <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
+              <GradientButton icon className="px-8 py-3 text-lg">
+                Inizia ora
+              </GradientButton>
+            </a>
+            <a href="#come-funziona" className="btn-outline px-8 py-3 text-lg font-medium">
               Scopri di più
-            </button>
+            </a>
           </div>
         </div>
         <div className="hidden md:flex justify-center">

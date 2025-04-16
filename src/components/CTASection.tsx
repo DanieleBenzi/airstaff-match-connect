@@ -9,14 +9,16 @@ const CTASection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="p-10 md:p-12 lg:p-16 space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-              Pronto a rivoluzionare il tuo processo di staffing?
+              Sei pronto a rivoluzionare e digitalizzare la tua Staffing e i tuoi processi rendendo il tutto più semplice?
             </h2>
             <p className="text-gray-300">
               Prenota una demo personalizzata e scopri come AirStaff può trasformare il tuo business.
             </p>
-            <GradientButton icon className="mt-4">
-              Prenota una demo
-            </GradientButton>
+            <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
+              <GradientButton icon className="mt-4">
+                Prenota una demo
+              </GradientButton>
+            </a>
           </div>
           <div className="hidden md:block h-full">
             <img 

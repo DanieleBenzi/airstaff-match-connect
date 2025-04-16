@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
                 <a href="/" className="text-gray-400 hover:text-white transition-colors">Home</a>
               </li>
               <li>
-                <a href="/#come-funziona" className="text-gray-400 hover:text-white transition-colors">Come Funziona</a>
+                <a href="/come-funziona" className="text-gray-400 hover:text-white transition-colors">Come Funziona</a>
               </li>
               <li>
                 <a href="/#vantaggi" className="text-gray-400 hover:text-white transition-colors">Vantaggi</a>
@@ -57,13 +57,13 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin size={20} className="text-gray-400 mr-3 mt-1" />
                 <span className="text-gray-400">
-                  Via Roma 123<br />
-                  20100 Milano, Italia
+                  Via Comelico 11<br />
+                  20135 Milano, Italia
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="text-gray-400 mr-3" />
-                <span className="text-gray-400">+39 02 1234567</span>
+                <span className="text-gray-400">+39 351 9843936</span>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="text-gray-400 mr-3" />

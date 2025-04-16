@@ -27,15 +27,17 @@ const Navbar: React.FC = () => {
           <Link to="/" className="text-black hover:text-airstaff-blue transition-colors font-medium">
             Home
           </Link>
-          <Link to="/#come-funziona" className="text-black hover:text-airstaff-blue transition-colors font-medium">
+          <Link to="/come-funziona" className="text-black hover:text-airstaff-blue transition-colors font-medium">
             Come funziona
           </Link>
           <Link to="/#vantaggi" className="text-black hover:text-airstaff-blue transition-colors font-medium">
             Vantaggi
           </Link>
-          <GradientButton>
-            Prenota una demo
-          </GradientButton>
+          <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
+            <GradientButton>
+              Prenota una demo
+            </GradientButton>
+          </a>
         </div>
 
         {/* Mobile menu */}
@@ -44,15 +46,17 @@ const Navbar: React.FC = () => {
             <Link to="/" className="text-black hover:text-airstaff-blue font-medium" onClick={toggleMenu}>
               Home
             </Link>
-            <Link to="/#come-funziona" className="text-black hover:text-airstaff-blue font-medium" onClick={toggleMenu}>
+            <Link to="/come-funziona" className="text-black hover:text-airstaff-blue font-medium" onClick={toggleMenu}>
               Come funziona
             </Link>
             <Link to="/#vantaggi" className="text-black hover:text-airstaff-blue font-medium" onClick={toggleMenu}>
               Vantaggi
             </Link>
-            <GradientButton onClick={toggleMenu}>
-              Prenota una demo
-            </GradientButton>
+            <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
+              <GradientButton onClick={toggleMenu}>
+                Prenota una demo
+              </GradientButton>
+            </a>
           </div>
         )}
       </div>

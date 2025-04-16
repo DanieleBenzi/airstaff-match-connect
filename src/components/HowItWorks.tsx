@@ -38,7 +38,7 @@ const HowItWorks: React.FC = () => {
           <ul className="text-left max-w-3xl mx-auto mt-6 space-y-2">
             <li className="flex items-start">
               <span className="font-bold mr-2">1.</span>
-              <span>Aumentare il fulfillment dei lavoratori dal 45-50% attuale al 100%</span>
+              <span>Aumentare il fulfillment dei lavoratori, raddoppiandolo</span>
             </li>
             <li className="flex items-start">
               <span className="font-bold mr-2">2.</span>
@@ -51,19 +51,19 @@ const HowItWorks: React.FC = () => {
           <Step 
             icon={<Database size={24} />}
             title="Caricamento dei talenti"
-            description="Le staffing passano il loro pool di lavoratori ad AirStaff che li indicizza tramite Elastic Search"
+            description="Le staffing passano il loro pool di lavoratori ad AirStaff che li indicizza"
             position={1}
           />
           <Step 
             icon={<Search size={24} />}
             title="Ricerca dei talenti"
-            description="Le aziende cercano potenziali candidati sulla piattaforma, visualizzando profili anonimi"
+            description="Le aziende tramite una ricerca basata sull'AI, cercano potenziali lavoratori, visualizzando profili anonimi"
             position={2}
           />
           <Step 
             icon={<MessageCircle size={24} />}
             title="Richiesta di contatto"
-            description="Quando l'azienda trova il candidato ideale, può richiedere un colloquio con un semplice click"
+            description="Quando l'azienda trova il lavoratore ideale, invia una richiesta di contatto alla Staffing"
             position={3}
           />
           <Step 
@@ -94,7 +94,7 @@ const HowItWorks: React.FC = () => {
               <ul className="space-y-3">
                 <li className="flex gap-2">
                   <span className="text-airstaff-blue">•</span>
-                  <span>Aumentare il fulfillment dei lavoratori dal 45-50% attuale al 100%</span>
+                  <span>Aumentare il fulfillment dei lavoratori, raddoppiandolo</span>
                 </li>
                 <li className="flex gap-2">
                   <span className="text-airstaff-blue">•</span>
