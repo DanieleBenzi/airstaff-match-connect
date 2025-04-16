@@ -1,23 +1,20 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Database, Building, TabletSmartphone, ArrowDownCircle, RefreshCw, Share2 } from 'lucide-react';
 import GradientButton from '@/components/GradientButton';
-
-const FlowStep = ({ 
-  number, 
-  title, 
-  icon, 
-  bgColor = "bg-airstaff-blue" 
-}: { 
-  number: number; 
-  title: string; 
-  icon: React.ReactNode; 
+const FlowStep = ({
+  number,
+  title,
+  icon,
+  bgColor = "bg-airstaff-blue"
+}: {
+  number: number;
+  title: string;
+  icon: React.ReactNode;
   bgColor?: string;
 }) => {
-  return (
-    <div className="flex flex-col items-center text-center">
+  return <div className="flex flex-col items-center text-center">
       <div className={`w-16 h-16 rounded-full ${bgColor} flex items-center justify-center text-white text-2xl font-bold mb-2`}>
         {number}
       </div>
@@ -25,13 +22,10 @@ const FlowStep = ({
         <div className="mb-2">{icon}</div>
         <p className="font-medium">{title}</p>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 const ComeFunziona: React.FC = () => {
-  return (
-    <div className="min-h-screen flex flex-col bg-white">
+  return <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
       
       <main className="flex-grow">
@@ -46,15 +40,11 @@ const ComeFunziona: React.FC = () => {
         </section>
 
         {/* Flow Diagram */}
-        <section className="py-20 px-6 md:px-12 lg:px-24">
+        <section className="px-6 md:px-12 lg:px-24 py-0">
           <div className="container mx-auto">
             <div className="relative">
               {/* Main image */}
-              <img 
-                src="/lovable-uploads/3bbd42f2-8e88-48d5-89cf-fe518db185a6.png" 
-                alt="Come funziona AirStaff" 
-                className="w-full mb-12 rounded-lg shadow-lg"
-              />
+              
 
               {/* Interactive flow */}
               <div className="mt-16 bg-gray-50 p-8 rounded-xl">
@@ -67,21 +57,12 @@ const ComeFunziona: React.FC = () => {
                     
                     <div className="space-y-12">
                       <div className="flex flex-col items-center">
-                        <FlowStep 
-                          number={1} 
-                          title="CSV Lavoratori" 
-                          icon={<Database size={32} className="text-blue-600" />} 
-                          bgColor="bg-red-500"
-                        />
+                        <FlowStep number={1} title="CSV Lavoratori" icon={<Database size={32} className="text-blue-600" />} bgColor="bg-red-500" />
                         <div className="h-12 border-l-2 border-gray-400 my-2"></div>
                       </div>
                       
                       <div className="flex flex-col items-center">
-                        <FlowStep 
-                          number={3} 
-                          title="Normalizzazione e mappatura dati" 
-                          icon={<RefreshCw size={32} className="text-blue-600" />}
-                        />
+                        <FlowStep number={3} title="Normalizzazione e mappatura dati" icon={<RefreshCw size={32} className="text-blue-600" />} />
                         <div className="h-12 border-l-2 border-gray-400 my-2"></div>
                       </div>
                       
@@ -101,12 +82,7 @@ const ComeFunziona: React.FC = () => {
                     <div className="space-y-8">
                       <div className="grid grid-cols-2 gap-x-8">
                         <div className="flex flex-col items-center">
-                          <FlowStep 
-                            number={2} 
-                            title="Azienda" 
-                            icon={<Building size={32} className="text-blue-600" />}
-                            bgColor="bg-red-500" 
-                          />
+                          <FlowStep number={2} title="Azienda" icon={<Building size={32} className="text-blue-600" />} bgColor="bg-red-500" />
                           <div className="h-12 border-l-2 border-gray-400 my-2"></div>
                         </div>
                         <div></div> {/* Empty cell for alignment */}
@@ -114,29 +90,17 @@ const ComeFunziona: React.FC = () => {
                       
                       <div className="grid grid-cols-2 gap-8">
                         <div className="flex flex-col items-center">
-                          <FlowStep 
-                            number={4} 
-                            title="Dashboard Company" 
-                            icon={<TabletSmartphone size={32} className="text-blue-600" />}
-                          />
+                          <FlowStep number={4} title="Dashboard Company" icon={<TabletSmartphone size={32} className="text-blue-600" />} />
                           <div className="h-12 border-l-2 border-gray-400 my-2"></div>
                         </div>
                         <div className="flex flex-col items-center">
-                          <FlowStep 
-                            number={6} 
-                            title="Dashboard Staffing" 
-                            icon={<TabletSmartphone size={32} className="text-blue-600" />}
-                          />
+                          <FlowStep number={6} title="Dashboard Staffing" icon={<TabletSmartphone size={32} className="text-blue-600" />} />
                         </div>
                       </div>
                       
                       <div className="grid grid-cols-2 gap-8">
                         <div className="flex flex-col items-center">
-                          <FlowStep 
-                            number={5} 
-                            title="Ricerca" 
-                            icon={<ArrowDownCircle size={32} className="text-blue-600" />}
-                          />
+                          <FlowStep number={5} title="Ricerca" icon={<ArrowDownCircle size={32} className="text-blue-600" />} />
                           <div className="h-12 border-l-2 border-gray-400 my-2"></div>
                         </div>
                         <div className="flex flex-col items-center mt-16">
@@ -146,38 +110,22 @@ const ComeFunziona: React.FC = () => {
                       
                       <div className="grid grid-cols-2 gap-8">
                         <div className="flex flex-col items-center">
-                          <FlowStep 
-                            number={7} 
-                            title="Lead" 
-                            icon={<Share2 size={32} className="text-blue-600" />}
-                          />
+                          <FlowStep number={7} title="Lead" icon={<Share2 size={32} className="text-blue-600" />} />
                           <div className="flex w-full justify-end">
                             <div className="border-t-2 border-gray-400 w-1/2 mt-10"></div>
                           </div>
                         </div>
                         <div className="flex flex-col items-center pt-20">
-                          <FlowStep 
-                            number={8} 
-                            title="Lead accettata" 
-                            icon={<Share2 size={32} className="text-blue-600" />}
-                          />
+                          <FlowStep number={8} title="Lead accettata" icon={<Share2 size={32} className="text-blue-600" />} />
                         </div>
                       </div>
                       
                       <div className="grid grid-cols-2 gap-8 pt-8">
                         <div className="flex flex-col items-center">
-                          <FlowStep 
-                            number={9} 
-                            title="Condivisione dati staffing all'azienda" 
-                            icon={<Share2 size={32} className="text-blue-600" />}
-                          />
+                          <FlowStep number={9} title="Condivisione dati staffing all'azienda" icon={<Share2 size={32} className="text-blue-600" />} />
                         </div>
                         <div className="flex flex-col items-center">
-                          <FlowStep 
-                            number={10} 
-                            title="Condivisione dati azienda alla staffing" 
-                            icon={<Share2 size={32} className="text-blue-600" />}
-                          />
+                          <FlowStep number={10} title="Condivisione dati azienda alla staffing" icon={<Share2 size={32} className="text-blue-600" />} />
                         </div>
                       </div>
                     </div>
@@ -200,8 +148,6 @@ const ComeFunziona: React.FC = () => {
       </main>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default ComeFunziona;
