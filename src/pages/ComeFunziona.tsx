@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -14,7 +13,12 @@ const ComeFunziona: React.FC = () => {
         {/* Hero Section */}
         <section className="py-16 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-gray-50 to-gray-100">
           <div className="container mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Come trovare i lavoratori con AirStaff</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Come trovare i lavoratori con{' '}
+              <span className="bg-gradient-to-r from-airstaff-blue to-airstaff-pink bg-clip-text text-transparent">
+                AirStaff
+              </span>
+            </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Ti guidiamo passo dopo passo nel processo di ricerca dei lavoratori più adatti alle tue esigenze
             </p>
