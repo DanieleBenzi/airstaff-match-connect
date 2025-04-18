@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Database, Search, MessageCircle, Handshake, Calendar, UserCheck } from 'lucide-react';
+import { Search, MessageCircle, Handshake } from 'lucide-react';
 
 interface StepProps {
   icon: React.ReactNode;
@@ -33,97 +33,29 @@ const HowItWorks: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Come funziona AirStaff</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            AirStaff mette in contatto agenzie interinali e Aziende, risolvendo due problemi principali:
+            Il modo più semplice per trovare i lavoratori di cui hai bisogno
           </p>
-          <ul className="text-left max-w-3xl mx-auto mt-6 space-y-2">
-            <li className="flex items-start">
-              <span className="font-bold mr-2">1.</span>
-              <span>Aumentare il fulfillment dei lavoratori, raddoppiandolo</span>
-            </li>
-            <li className="flex items-start">
-              <span className="font-bold mr-2">2.</span>
-              <span>Ridurre i tempi morti tra la fine di una missione e l'inizio della successiva</span>
-            </li>
-          </ul>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <Step 
-            icon={<Database size={24} />}
-            title="Caricamento dei talenti"
-            description="Le Staffing passano il loro pool di lavoratori ad AirStaff che li indicizza"
+            icon={<Search size={24} />}
+            title="Cerca lavoratori"
+            description="Usa il nostro motore di ricerca intelligente: inserisci mansione, data di inizio, località e salario per trovare i lavoratori più adatti"
             position={1}
           />
           <Step 
-            icon={<Search size={24} />}
-            title="Ricerca dei talenti"
-            description="Le Aziende tramite una ricerca basata sull'AI, cercano potenziali lavoratori, visualizzando profili anonimi"
+            icon={<MessageCircle size={24} />}
+            title="Richiedi un contatto"
+            description="Quando trovi il lavoratore giusto, invia una richiesta di contatto all'agenzia per il lavoro"
             position={2}
           />
           <Step 
-            icon={<MessageCircle size={24} />}
-            title="Richiesta di contatto"
-            description="Quando l'Azienda trova il lavoratore ideale, invia una richiesta di contatto alla Staffing"
+            icon={<Handshake size={24} />}
+            title="Chiudi il contratto"
+            description="L'agenzia ti contatterà per finalizzare tutti i dettagli e far iniziare il lavoratore"
             position={3}
           />
-          <Step 
-            icon={<Handshake size={24} />}
-            title="Matching"
-            description="La Staffing riceve e valuta la richiesta, decidendo se procedere con il matching"
-            position={4}
-          />
-          <Step 
-            icon={<UserCheck size={24} />}
-            title="Connessione"
-            description="In caso di accettazione, AirStaff facilita lo scambio di informazioni tra le parti"
-            position={5}
-          />
-          <Step 
-            icon={<Calendar size={24} />}
-            title="Ottimizzazione"
-            description="Il sistema riduce i tempi di attesa tra una missione e l'altra, aumentando il fulfillment"
-            position={6}
-          />
-        </div>
-
-        <div className="mt-16 bg-gray-50 p-8 rounded-xl">
-          <h3 className="text-2xl font-bold mb-4">Cosa risolve AirStaff</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h4 className="text-xl font-bold mb-3">Per le agenzie interinali</h4>
-              <ul className="space-y-3">
-                <li className="flex gap-2">
-                  <span className="text-airstaff-blue">•</span>
-                  <span>Aumentare il fulfillment dei lavoratori, raddoppiandolo</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-airstaff-blue">•</span>
-                  <span>Diminuire il turn over dei talenti riducendo i tempi morti tra mission</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-airstaff-blue">•</span>
-                  <span>Massimizzare l'efficienza del pool di talenti disponibili</span>
-                </li>
-              </ul>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h4 className="text-xl font-bold mb-3">Per le Aziende</h4>
-              <ul className="space-y-3">
-                <li className="flex gap-2">
-                  <span className="text-airstaff-pink">•</span>
-                  <span>Ridurre drasticamente i tempi di ricerca e assunzione</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-airstaff-pink">•</span>
-                  <span>Accesso a talenti preselezionati e già disponibili</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-airstaff-pink">•</span>
-                  <span>Processo semplificato con un unico punto di contatto</span>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </section>
