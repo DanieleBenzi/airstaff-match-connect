@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
             Tutti i <span className="text-airstaff-pink">lavoratori</span> a tua disposizione dalle migliori <span className="text-airstaff-blue">Agenzie per il lavoro</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
-            AirStaff è il motore di ricerca basato sull'intelligenza artificiale che mette a disposizione tutti i lavoratori disponibili sul mercato.
+            AirStaff è il motore di ricerca intelligente (basato sull'intelligenza artificiale) che mette a disposizione tutti i lavoratori disponibili sul mercato.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
@@ -38,3 +38,4 @@ const HeroSection: React.FC = () => {
 };
 
 export default HeroSection;
+
