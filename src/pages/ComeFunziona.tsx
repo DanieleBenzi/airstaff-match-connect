@@ -107,9 +107,7 @@ const ComeFunziona: React.FC = () => {
             <div className="mt-16 max-w-4xl mx-auto bg-yellow-50 p-6 rounded-xl border border-yellow-200">
               <h4 className="font-bold mb-2">📱 Nota sulla privacy</h4>
               <p className="text-gray-700">
-                La tua privacy è importante per noi. I dati personali dei lavoratori sono protetti e verranno 
-                condivisi solo dopo che l'agenzia avrà accettato la tua richiesta di contatto. In questo modo, 
-                garantiamo la massima sicurezza per tutti.
+                La tua privacy è importante per noi. I dati personali dei lavoratori sono protetti e non verranno mai condivisi su AirStaff. Verranno condivisi solo dopo che l'agenzia avrà accettato la tua richiesta di contatto. In questo modo, garantiamo la massima sicurezza per tutti.
               </p>
             </div>
 
