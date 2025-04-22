@@ -12,11 +12,11 @@ const CTASection: React.FC = () => {
               Pronto a trovare i lavoratori perfetti per la tua azienda?
             </h2>
             <p className="text-gray-300">
-              Prova ora AirStaff, è gratis e non devi sostenere nessun costo! Basta solo registrarti ed avrai subito accesso a migliaia di lavoratori
+              Prova AirStaff ora, è gratis! Non devi sostenere nessun costo. Ti basta registrarti ed avrai subito accesso a migliaia di lavoratori!
             </p>
             <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
               <GradientButton icon className="mt-4">
-                Prova Gratis
+                Provalo gratis
               </GradientButton>
             </a>
           </div>

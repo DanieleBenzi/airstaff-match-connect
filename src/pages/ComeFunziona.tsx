@@ -114,9 +114,9 @@ const ComeFunziona: React.FC = () => {
             {/* CTA */}
             <div className="text-center mt-16">
               <h3 className="text-2xl font-bold mb-4">Pronto a trovare i lavoratori giusti?</h3>
-              <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
+              <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
                 <GradientButton icon className="mx-auto">
-                  Inizia ora
+                  Provalo gratis
                 </GradientButton>
               </a>
             </div>

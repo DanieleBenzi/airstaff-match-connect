@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
@@ -15,10 +16,16 @@ const Navbar: React.FC = () => {
           <Logo />
         </Link>
 
-        {/* Mobile menu button */}
-        <button onClick={toggleMenu} className="md:hidden">
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-4">
+          <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+            <GradientButton>
+              Provalo gratis
+            </GradientButton>
+          </a>
+          <button onClick={toggleMenu} className="md:hidden">
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center space-x-8">
@@ -28,11 +35,6 @@ const Navbar: React.FC = () => {
           <Link to="/come-funziona" className="text-black hover:text-airstaff-blue transition-colors font-medium">
             Come funziona
           </Link>
-          <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
-            <GradientButton>
-              Prova Gratis
-            </GradientButton>
-          </a>
         </div>
 
         {/* Mobile menu */}
@@ -44,11 +46,6 @@ const Navbar: React.FC = () => {
             <Link to="/come-funziona" className="text-black hover:text-airstaff-blue font-medium" onClick={toggleMenu}>
               Come funziona
             </Link>
-            <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
-              <GradientButton onClick={toggleMenu}>
-                Prova Gratis
-              </GradientButton>
-            </a>
           </div>
         )}
       </div>
