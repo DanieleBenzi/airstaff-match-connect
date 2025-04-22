@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
@@ -7,7 +6,6 @@ import { Menu, X } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -30,9 +28,9 @@ const Navbar: React.FC = () => {
           <Link to="/come-funziona" className="text-black hover:text-airstaff-blue transition-colors font-medium">
             Come funziona
           </Link>
-          <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
+          <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
             <GradientButton>
-              Prenota una demo
+              Prova Gratis
             </GradientButton>
           </a>
         </div>
@@ -46,9 +44,9 @@ const Navbar: React.FC = () => {
             <Link to="/come-funziona" className="text-black hover:text-airstaff-blue font-medium" onClick={toggleMenu}>
               Come funziona
             </Link>
-            <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
+            <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
               <GradientButton onClick={toggleMenu}>
-                Prenota una demo
+                Prova Gratis
               </GradientButton>
             </a>
           </div>

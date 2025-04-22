@@ -12,11 +12,11 @@ const CTASection: React.FC = () => {
               Pronto a trovare i lavoratori perfetti per la tua azienda?
             </h2>
             <p className="text-gray-300">
-              Prenota una demo personalizzata e scopri come AirStaff può semplificare la ricerca del personale.
+              Prova ora AirStaff, è gratis e non devi sostenere nessun costo! Basta solo registrarti ed avrai subito accesso a migliaia di lavoratori
             </p>
-            <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
+            <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
               <GradientButton icon className="mt-4">
-                Prenota una demo
+                Prova Gratis
               </GradientButton>
             </a>
           </div>

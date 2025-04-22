@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GradientButton from './GradientButton';
 import { Link } from 'react-router-dom';
@@ -12,12 +11,12 @@ const HeroSection: React.FC = () => {
             Tutti i <span className="text-airstaff-pink">lavoratori</span> a tua disposizione dalle migliori <span className="text-airstaff-blue">Agenzie per il lavoro</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
-            AirStaff è il motore di ricerca intelligente (basato sull'intelligenza artificiale) che mette a disposizione tutti i lavoratori disponibili sul mercato.
+            AirStaff è il motore di ricerca intelligente che ti elenca, in una sola ricerca, tutti i lavoratori disponibili tramite le agenzie per il lavoro associate.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/daniele-benzi-db/30min" target="_blank" rel="noopener noreferrer">
+            <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
               <GradientButton icon className="px-8 py-3 text-lg">
-                Inizia ora
+                Prova ora
               </GradientButton>
             </a>
             <a href="#come-funziona" className="btn-outline px-8 py-3 text-lg font-medium">
@@ -38,4 +37,3 @@ const HeroSection: React.FC = () => {
 };
 
 export default HeroSection;
-
