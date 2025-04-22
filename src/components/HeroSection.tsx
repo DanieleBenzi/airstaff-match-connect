@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-            Tutti i <span className="text-airstaff-pink">lavoratori</span> a tua disposizione dalle migliori <span className="text-airstaff-blue">Agenzie per il lavoro</span>
+            Tutti i <span className="text-airstaff-pink">lavoratori</span> a tua disposizione dalle migliori <span className="text-airstaff-blue">Agenzie per il lavoro</span>.
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
             AirStaff è il motore di ricerca intelligente che ti elenca, in una sola ricerca, tutti i lavoratori disponibili tramite le agenzie per il lavoro associate.
