@@ -16,17 +16,6 @@ const Navbar: React.FC = () => {
           <Logo />
         </Link>
 
-        <div className="flex items-center gap-4">
-          <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
-            <GradientButton>
-              Provalo gratis
-            </GradientButton>
-          </a>
-          <button onClick={toggleMenu} className="md:hidden">
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-
         {/* Desktop menu */}
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/" className="text-black hover:text-airstaff-blue transition-colors font-medium">
@@ -35,6 +24,22 @@ const Navbar: React.FC = () => {
           <Link to="/come-funziona" className="text-black hover:text-airstaff-blue transition-colors font-medium">
             Come funziona
           </Link>
+          <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+            <GradientButton>
+              Provalo gratis
+            </GradientButton>
+          </a>
+        </div>
+
+        <div className="flex items-center gap-4 md:hidden">
+          <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+            <GradientButton>
+              Provalo gratis
+            </GradientButton>
+          </a>
+          <button onClick={toggleMenu} className="md:hidden">
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
         {/* Mobile menu */}
