@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => setIsOpen((v) => !v);
 
   return (
-    <nav className="py-4 px-2 md:px-12 lg:px-24 bg-white sticky top-0 z-50 shadow-none">
+    <nav className="py-4 px-2 md:px-12 lg:px-24 sticky top-0 z-50 shadow-none bg-transparent">
       <div className="container mx-auto flex justify-between items-center relative">
         {/* DESKTOP */}
         <div className="hidden md:flex w-full justify-between items-center">
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
         {/* MOBILE NAVBAR CLOSED/OPENED */}
         <div className="md:hidden w-full flex flex-col items-center">
           <div
-            className="flex items-center w-full justify-between bg-white rounded-full shadow-md px-4 py-2 transition-all sticky top-0 z-50"
+            className="flex items-center w-full justify-between rounded-full shadow-md px-4 py-2 transition-all sticky top-0 z-50 bg-transparent"
             style={{ 
               borderRadius: "32px", // For mobile, higher radius
             }}
@@ -65,10 +65,11 @@ const Navbar: React.FC = () => {
           {/* MOBILE MENU: ONLY WHEN MENU OPEN */}
           {isOpen && (
             <div
-              className="absolute left-1/2 -translate-x-1/2 mt-2 w-[95vw] max-w-xs bg-white rounded-3xl shadow-xl py-5 flex flex-col space-y-3 z-50 animate-fade-in-up"
+              className="absolute left-1/2 -translate-x-1/2 mt-2 w-[95vw] max-w-xs bg-white/90 rounded-3xl shadow-xl py-5 flex flex-col space-y-3 z-50 animate-fade-in-up backdrop-blur-md"
               style={{
                 top: '60px', // Space below navbar
                 minWidth: 220,
+                backgroundColor: 'rgba(255, 255, 255, 0.9)', // Slightly transparent white
               }}
             >
               <Link
@@ -94,4 +95,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-
