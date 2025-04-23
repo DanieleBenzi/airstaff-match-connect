@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
@@ -64,14 +63,14 @@ const Navbar: React.FC = () => {
       {/* Mobile: floating bar */}
       <div className={mobileBarClass}>
         <Link to="/" className="flex items-center flex-1">
-          <Logo white />
+          <Logo />
         </Link>
         <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block mr-2">
           <GradientButton>
             Provalo gratis
           </GradientButton>
         </a>
-        <button onClick={() => setIsOpen(!isOpen)} aria-label="Open menu" className="text-white">
+        <button onClick={() => setIsOpen(!isOpen)} aria-label="Open menu" className="text-black">
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
