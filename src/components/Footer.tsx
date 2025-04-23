@@ -8,12 +8,11 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white py-16 px-6 md:px-12 lg:px-24">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           <div>
             <Logo className="mb-6" />
             <p className="text-gray-400 mb-6">
-              AirStaff rivoluziona il modo in cui Staffing e Aziende si connettono, 
-              ottimizzando il processo di ricerca e selezione del personale.
+              AirStaff è il motore di ricerca intelligente che ti elenca, in una sola ricerca, tutti i lavoratori disponibili tramite le agenzie per il lavoro associate.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -71,28 +70,6 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-
-          <div>
-            <h3 className="text-xl font-bold mb-6">Newsletter</h3>
-            <p className="text-gray-400 mb-4">
-              Iscriviti alla nostra newsletter per rimanere aggiornato sulle ultime novità
-            </p>
-            <form className="space-y-3">
-              <div>
-                <input 
-                  type="email" 
-                  placeholder="La tua email" 
-                  className="w-full px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-airstaff-blue"
-                />
-              </div>
-              <button 
-                type="submit" 
-                className="w-full bg-gradient-cta text-white px-4 py-2 rounded-md hover:opacity-90 transition-opacity"
-              >
-                Iscriviti
-              </button>
-            </form>
-          </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center sm:text-left">
@@ -127,3 +104,4 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+
