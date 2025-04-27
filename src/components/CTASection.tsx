@@ -16,7 +16,7 @@ const CTASection: React.FC = () => {
             </p>
             <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
               <GradientButton icon className="mt-4">
-                Provalo gratis
+                Prova gratis
               </GradientButton>
             </a>
           </div>
@@ -24,6 +24,7 @@ const CTASection: React.FC = () => {
             <img 
               alt="AirStaff Demo" 
               className="h-full w-full object-cover"
+              loading="lazy"
               src="/lovable-uploads/f6d3364e-be08-46ee-86b1-60df40371ea8.png"
             />
           </div>

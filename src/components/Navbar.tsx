@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
           </Link>
           <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Provalo gratis
+              Prova gratis
             </GradientButton>
           </a>
         </div>
@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center gap-4 md:hidden">
           <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Provalo gratis
+              Prova gratis
             </GradientButton>
           </a>
           <button onClick={toggleMenu} className="md:hidden">
