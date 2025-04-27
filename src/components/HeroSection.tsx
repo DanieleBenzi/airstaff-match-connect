@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GradientButton from './GradientButton';
 
@@ -7,7 +8,7 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-            Trova il lavoratore giusto in 5 min, tra oltre{' '}
+            Trova il <span className="text-[#D35B6F]">lavoratore</span> giusto in 5 min, tra oltre{' '}
             <span className="text-[#3A78E6]">12.000</span> profili
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
