@@ -116,7 +116,7 @@ const ComeFunziona: React.FC = () => {
               <h3 className="text-2xl font-bold mb-4">Pronto a trovare i lavoratori giusti?</h3>
               <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
                 <GradientButton icon className="mx-auto">
-                  Provalo gratis
+                  Prova Airstaff gratis
                 </GradientButton>
               </a>
             </div>
