@@ -24,4 +24,5 @@ jobs:
             cd /srv/website
             git pull origin main
             export PATH=$HOME/.bun/bin:$PATH
+            bun install
             bun run build
