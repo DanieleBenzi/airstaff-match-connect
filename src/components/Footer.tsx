@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Mail, MapPin, Linkedin } from 'lucide-react';
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
 
@@ -15,17 +15,8 @@ const Footer: React.FC = () => {
               AirStaff è il motore di ricerca intelligente che ti elenca, in una sola ricerca, tutti i lavoratori disponibili tramite le agenzie per il lavoro associate.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/airstaff" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram size={20} />
               </a>
             </div>
           </div>
@@ -40,10 +31,7 @@ const Footer: React.FC = () => {
                 <Link to="/come-funziona" className="text-gray-400 hover:text-white transition-colors">Come Funziona</Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-white transition-colors">Chi Siamo</Link>
-              </li>
-              <li>
-                <Link to="#" className="text-gray-400 hover:text-white transition-colors">Blog</Link>
+                <Link to="/chi-siamo" className="text-gray-400 hover:text-white transition-colors">Chi Siamo</Link>
               </li>
             </ul>
           </div>
@@ -57,10 +45,6 @@ const Footer: React.FC = () => {
                   Via Comelico 11<br />
                   20135 Milano, Italia
                 </span>
-              </li>
-              <li className="flex items-center">
-                <Phone size={20} className="text-gray-400 mr-3" />
-                <span className="text-gray-400">+39 351 9843936</span>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="text-gray-400 mr-3" />
@@ -104,4 +88,3 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
-

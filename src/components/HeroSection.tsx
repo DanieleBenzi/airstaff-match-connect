@@ -1,10 +1,25 @@
 
 import React from 'react';
 import GradientButton from './GradientButton';
+import { Helmet } from 'react-helmet-async';
 
 const HeroSection: React.FC = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AirStaff",
+    "url": "https://www.airstaff.it/",
+    "logo": "https://www.airstaff.it/logo.png",
+    "description": "AirStaff è il motore di ricerca intelligente che ti elenca, in una sola ricerca, tutti i lavoratori disponibili tramite le agenzie per il lavoro associate."
+  };
+
   return (
     <section className="py-20 md:py-32 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-gray-50 to-gray-100">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
