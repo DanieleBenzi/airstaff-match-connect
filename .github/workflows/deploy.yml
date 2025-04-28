@@ -23,4 +23,5 @@ jobs:
           script: |
             cd /srv/website
             git pull origin main
+            export PATH=$HOME/.bun/bin:$PATH
             bun run build
