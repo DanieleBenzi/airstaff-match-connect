@@ -7,16 +7,25 @@ import Benefits from '@/components/Benefits';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import AISection from '@/components/AISection';
+import StaffingPartners from '@/components/StaffingPartners';
+import AboutUs from '@/components/AboutUs';
+import { Helmet } from 'react-helmet-async';
 
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <Helmet>
+        <title>AirStaff - il motore di ricerca per le agenzie per il lavoro</title>
+        <meta name="description" content="Il lavoratore giusto è già qui. Cerca. Trova. Richiedi." />
+      </Helmet>
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
         <HowItWorks />
         <Benefits />
         <AISection />
+        <StaffingPartners />
+        <AboutUs />
         <CTASection />
       </main>
       <Footer />

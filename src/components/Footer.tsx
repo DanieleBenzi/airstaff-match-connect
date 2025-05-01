@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <div>
             <Logo className="mb-6" />
             <p className="text-gray-400 mb-6">
-              AirStaff è il motore di ricerca intelligente che ti elenca, in una sola ricerca, tutti i lavoratori disponibili tramite le agenzie per il lavoro associate.
+              Il lavoratore giusto è già qui. Cerca. Trova. Richiedi.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/company/airstaff" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition-colors">
@@ -26,12 +26,6 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li>
                 <Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link>
-              </li>
-              <li>
-                <Link to="/come-funziona" className="text-gray-400 hover:text-white transition-colors">Come Funziona</Link>
-              </li>
-              <li>
-                <Link to="/chi-siamo" className="text-gray-400 hover:text-white transition-colors">Chi Siamo</Link>
               </li>
             </ul>
           </div>
@@ -48,8 +42,8 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="text-gray-400 mr-3" />
-                <a href="mailto:info@airstaff.com" className="text-gray-400 hover:text-white transition-colors">
-                  info@airstaff.com
+                <a href="mailto:hello@airstaff.it" className="text-gray-400 hover:text-white transition-colors">
+                  hello@airstaff.it
                 </a>
               </li>
             </ul>

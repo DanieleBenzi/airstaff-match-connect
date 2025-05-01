@@ -3,37 +3,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.airstaff.it/</loc>
-    <lastmod>2025-04-28</lastmod>
+    <lastmod>2025-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.airstaff.it/come-funziona</loc>
-    <lastmod>2025-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.airstaff.it/chi-siamo</loc>
-    <lastmod>2025-04-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.airstaff.it/privacy-policy</loc>
-    <lastmod>2025-04-28</lastmod>
+    <lastmod>2025-05-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.airstaff.it/terms-conditions</loc>
-    <lastmod>2025-04-28</lastmod>
+    <lastmod>2025-05-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.airstaff.it/cookie-policy</loc>
-    <lastmod>2025-04-28</lastmod>
+    <lastmod>2025-05-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

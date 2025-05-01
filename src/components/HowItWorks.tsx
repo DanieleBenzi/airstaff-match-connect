@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Search, MessageCircle, Handshake } from 'lucide-react';
 
@@ -31,24 +32,27 @@ const HowItWorks: React.FC = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Come funziona AirStaff</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            AirStaff permette alle aziende di cercare lavoratori direttamente nei database lavoratori delle APL partner.
+          </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <Step 
             icon={<Search size={24} />}
             title="Cerca lavoratori"
-            description="Inserisci mansione, data di inizio e località nel motore di ricerca. Consulta in questo modo migliaia di lavoratori direttamente nei database delle APL associate."
+            description="Cerca i profili di cui hai bisogno filtrando per competenze, località e disponibilità. Consulta in questo modo migliaia di lavoratori direttamente nell'organico delle APL associate."
             position={1}
           />
           <Step 
             icon={<MessageCircle size={24} />}
-            title="Richiedi un contatto"
-            description="Quando trovi il lavoratore giusto, invia una richiesta di contatto all'agenzia per il lavoro"
+            title="Richiedi la risorsa"
+            description="Quando trovi il lavoratore giusto (non candidato potenziale), invia una richiesta di contatto all'APL che gestisce il lavoratore."
             position={2}
           />
           <Step 
             icon={<Handshake size={24} />}
-            title="Chiudi il contratto"
+            title="Finalizza"
             description="L'agenzia ti contatterà per presentarti il lavoratore richiesto e inserirlo nel tuo organico"
             position={3}
           />
