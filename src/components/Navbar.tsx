@@ -21,17 +21,17 @@ const Navbar: React.FC = () => {
           <Link to="/" className="text-black hover:text-airstaff-blue transition-colors font-medium">
             Home
           </Link>
-          <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Mi interessa
+              Prova ora, è gratis!
             </GradientButton>
           </a>
         </div>
 
         <div className="flex items-center gap-4 md:hidden">
-          <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Mi interessa
+              Prova ora, è gratis!
             </GradientButton>
           </a>
           <button onClick={toggleMenu} className="md:hidden">
