@@ -11,12 +11,12 @@ const CTASection: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
               Pronto a trovare i lavoratori perfetti per la tua azienda?
             </h2>
-            <p className="text-gray-300">
+            <p className="text-white">
               Prova AirStaff ora, è gratis! Richiedi accesso in anteprima.
             </p>
             <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
               <GradientButton icon className="mt-4">
-                Mi interessa
+                Prova ora, è gratis!
               </GradientButton>
             </a>
           </div>

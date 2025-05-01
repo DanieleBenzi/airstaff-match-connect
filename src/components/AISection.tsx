@@ -19,9 +19,9 @@ const AISection: React.FC = () => {
               </div>
             </div>
             <div className="w-full md:w-2/3">
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-black mb-6">
                 AirStaff usa l'intelligenza artificiale per ordinare i risultati delle ricerche in maniera che siano il più in linea possibile 
-                con l'Azienda che sta effettuando la ricerca. L'obbiettivo dell'AI è quella di massimizzare la qualità del matching e imparare 
+                con l'Azienda che sta effettuando la ricerca. L'obiettivo dell'AI è quella di massimizzare la qualità del matching e imparare 
                 sulle abitudini di ricerca delle Aziende che utilizzano AirStaff.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">

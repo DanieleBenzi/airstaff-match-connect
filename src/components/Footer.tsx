@@ -11,38 +11,38 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           <div>
             <Logo className="mb-6" />
-            <p className="text-gray-400 mb-6">
+            <p className="text-white mb-6">
               Il lavoratore giusto è già qui. Cerca. Trova. Richiedi.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/airstaff" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/airstaff" aria-label="LinkedIn" className="text-white hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-6">Links Utili</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Links Utili</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link>
+                <Link to="/" className="text-white hover:text-white transition-colors">Home</Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-6">Contattaci</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Contattaci</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin size={20} className="text-gray-400 mr-3 mt-1" />
-                <span className="text-gray-400">
+                <MapPin size={20} className="text-white mr-3 mt-1" />
+                <span className="text-white">
                   Via Comelico 11<br />
                   20135 Milano, Italia
                 </span>
               </li>
               <li className="flex items-center">
-                <Mail size={20} className="text-gray-400 mr-3" />
-                <a href="mailto:hello@airstaff.it" className="text-gray-400 hover:text-white transition-colors">
+                <Mail size={20} className="text-white mr-3" />
+                <a href="mailto:hello@airstaff.it" className="text-white hover:text-white transition-colors">
                   hello@airstaff.it
                 </a>
               </li>
