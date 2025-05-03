@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -114,9 +115,9 @@ const ComeFunziona: React.FC = () => {
             {/* CTA */}
             <div className="text-center mt-16">
               <h3 className="text-2xl font-bold mb-4">Pronto a trovare i lavoratori giusti?</h3>
-              <a href="http://www.app.airstaff.it/" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer">
                 <GradientButton icon className="mx-auto">
-                  Prova Airstaff gratis
+                  Prova Gratis
                 </GradientButton>
               </a>
             </div>

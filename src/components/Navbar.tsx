@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           </Link>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Prova ora, è gratis!
+              Prova Gratis
             </GradientButton>
           </a>
         </div>
@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center gap-4 md:hidden">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Prova ora, è gratis!
+              Prova Gratis
             </GradientButton>
           </a>
           <button onClick={toggleMenu} className="md:hidden">
