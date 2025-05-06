@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop menu - only CTA */}
         <div className="hidden md:flex items-center">
-          <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
               Prova Gratis
             </GradientButton>
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile - only logo and CTA aligned to the right */}
         <div className="md:hidden flex justify-end">
-          <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
               Prova Gratis
             </GradientButton>
