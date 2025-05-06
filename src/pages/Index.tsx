@@ -6,7 +6,6 @@ import HowItWorks from '@/components/HowItWorks';
 import Benefits from '@/components/Benefits';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
-import AISection from '@/components/AISection';
 import StaffingPartners from '@/components/StaffingPartners';
 import AboutUs from '@/components/AboutUs';
 import { Helmet } from 'react-helmet-async';
@@ -24,7 +23,6 @@ const Index: React.FC = () => {
         <HowItWorks />
         <Benefits />
         <AboutUs />
-        <AISection />
         <StaffingPartners />
         <CTASection />
       </main>
