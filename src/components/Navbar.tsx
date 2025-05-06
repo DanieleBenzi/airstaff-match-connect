@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
           <Link to="/" className="text-black hover:text-airstaff-blue transition-colors font-medium">
             Home
           </Link>
-          <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
               Prova Gratis
             </GradientButton>
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="flex items-center gap-4 md:hidden">
-          <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
               Prova Gratis
             </GradientButton>

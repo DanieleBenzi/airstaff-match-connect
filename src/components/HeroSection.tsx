@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
             Il lavoratore giusto è già qui. Cerca. Trova. Richiedi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <GradientButton icon className="w-full sm:w-auto px-8 py-3 text-lg">
                 Prova Gratis
               </GradientButton>
