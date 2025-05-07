@@ -15,7 +15,7 @@ const Index: React.FC = () => {
     <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
         <title>AirStaff - il motore di ricerca per le agenzie per il lavoro</title>
-        <meta name="description" content="Il lavoratore giusto è già qui. Cerca. Trova. Richiedi." />
+        <meta name="description" content="La tua futura risorsa è già qui. Cerca. Trova. Richiedi." />
       </Helmet>
       <Navbar />
       <main className="flex-grow">

@@ -33,7 +33,7 @@ const HowItWorks: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Come funziona AirStaff</h2>
           <p className="text-lg text-black max-w-3xl mx-auto">
-            AirStaff permette alle aziende di cercare lavoratori direttamente nei database lavoratori delle APL partner.
+            AirStaff permette alle aziende di cercare lavoratori direttamente nei database delle Agenzie Per il Lavoro (APL) partner.
           </p>
         </div>
         
@@ -41,19 +41,19 @@ const HowItWorks: React.FC = () => {
           <Step 
             icon={<Search size={24} />}
             title="Cerca lavoratori"
-            description="Cerca i profili di cui hai bisogno filtrando per competenze, località e disponibilità. Consulta in questo modo migliaia di lavoratori direttamente nell'organico delle APL associate."
+            description="Cerca i profili di cui hai bisogno filtrando per competenze, località e disponibilità. Consulta migliaia di lavoratori direttamente nell'organico delle Agenzie per il Lavoro associate."
             position={1}
           />
           <Step 
             icon={<MessageCircle size={24} />}
             title="Richiedi la risorsa"
-            description="Quando trovi il lavoratore giusto (non candidato potenziale), invia una richiesta di contatto all'APL che gestisce il lavoratore."
+            description="Quando trovi il lavoratore giusto, invia una richiesta di contatto all'agenzia per il lavoro che gestisce la risorsa."
             position={2}
           />
           <Step 
             icon={<Handshake size={24} />}
             title="Finalizza"
-            description="L'agenzia ti contatterà per presentarti il lavoratore richiesto e inserirlo nel tuo organico"
+            description="L'agenzia per il lavoro ti contatterà per presentarti il lavoratore richiesto e inserirlo nel tuo organico"
             position={3}
           />
         </div>

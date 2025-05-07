@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
     "name": "AirStaff",
     "url": "https://www.airstaff.it/",
     "logo": "https://www.airstaff.it/logo.png",
-    "description": "Il lavoratore giusto è già qui. Cerca. Trova. Richiedi."
+    "description": "La tua futura risorsa è già qui. Cerca. Trova. Richiedi."
   };
 
   return (
@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
             <span className="bg-gradient-to-r from-airstaff-blue to-airstaff-pink bg-clip-text text-transparent">AirStaff</span> - Cerca tra i <span className="text-[#D35B6F]">Lavoratori</span> delle migliori <span className="text-black">Agenzie per il Lavoro</span>!
           </h1>
           <p className="text-lg md:text-xl text-black">
-            Il lavoratore giusto è già qui. Cerca. Trova. Richiedi.
+            La tua futura risorsa è già qui. Cerca. Trova. Richiedi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
