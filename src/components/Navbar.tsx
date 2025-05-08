@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Prova Gratis
+              Prenota Posto
             </GradientButton>
           </a>
         </div>
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden flex justify-end">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Prova Gratis
+              Prenota Posto
             </GradientButton>
           </a>
         </div>
