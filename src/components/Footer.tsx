@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <div>
             <Logo className="mb-6" />
             <p className="text-white mb-6">
-              Il lavoratore giusto è già qui. Cerca. Trova. Richiedi.
+              La tua futura risorsa è già qui. Cerca. Trova. Richiedi.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/company/airstaff" aria-label="LinkedIn" className="text-white hover:text-white transition-colors">
@@ -26,6 +26,9 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li>
                 <Link to="/" className="text-white hover:text-white transition-colors">Home</Link>
+              </li>
+              <li>
+                <Link to="/faq" className="text-white hover:text-white transition-colors">Domande frequenti</Link>
               </li>
             </ul>
           </div>
