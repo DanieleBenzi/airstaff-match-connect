@@ -144,9 +144,7 @@ const FAQ: React.FC = () => {
               Contattaci direttamente per ricevere assistenza personalizzata
             </p>
             <a 
-              href="https://wa.me/393519843936" 
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:hello@airstaff.it" 
               className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-airstaff-blue to-airstaff-pink text-white font-medium rounded-full hover:scale-105 transition-transform"
             >
               Contattaci
