@@ -14,9 +14,9 @@ const CTASection: React.FC = () => {
             <p className="text-white">
               Prova AirStaff ora, è gratis! Richiedi accesso in anteprima.
             </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJCXG9WzJZ9D7xXkNWqPO-muGG_F9aW-Uwdm6gGLbMoXy7wQ/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+            <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer">
               <GradientButton icon className="mt-4">
-                Prenota Posto
+                Prova gratis
               </GradientButton>
             </a>
           </div>
