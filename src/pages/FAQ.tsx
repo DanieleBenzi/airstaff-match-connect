@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Navbar from '@/components/Navbar';
@@ -23,12 +24,12 @@ const FAQ: React.FC = () => {
     {
       id: 'faq-2',
       question: 'Come posso richiedere un lavoratore attraverso AirStaff?',
-      answer: 'Una volta trovato il lavoratore che ti interessa, puoi inviare (gratuitamente) una richiesta di contatto direttamente all\'agenzia per il lavoro (ApL) che gestisce la risorsa. L\'agenzia ti contatterà per presentarti il lavoratore e procedere con l\'inserimento nel tuo organico'
+      answer: 'Una volta trovato il lavoratore che ti interessa, puoi inviare gratuitamente una richiesta di contatto direttamente all\'agenzia per il lavoro (ApL) che gestisce la risorsa. L\'agenzia ti contatterà per presentarti il lavoratore e procedere con l\'inserimento nel tuo organico.'
     },
     {
       id: 'faq-3',
       question: 'Quali sono i costi per utilizzare AirStaff?',
-      answer: 'AirStaff è gratuito per le aziende che cercano lavoratori. Non ci sono costi da sostenere né abbonamenti da sottoscrivere.'
+      answer: 'AirStaff è completamente gratuito per le aziende che cercano lavoratori. Non ci sono costi da sostenere né abbonamenti da sottoscrivere.'
     },
     {
       id: 'faq-4',
@@ -53,7 +54,7 @@ const FAQ: React.FC = () => {
     {
       id: 'faq-8',
       question: 'Posso cercare lavoratori in tutta Italia?',
-      answer: 'Per ora AirStaff è presente in Lombardia e Veneto. La disponibilità dipende dalle agenzie partner presenti nelle diverse regioni e città.'
+      answer: 'Attualmente AirStaff è presente in Lombardia e Veneto. La disponibilità dipende dalle agenzie partner presenti nelle diverse regioni e città.'
     },
     {
       id: 'faq-9',
@@ -63,7 +64,7 @@ const FAQ: React.FC = () => {
     {
       id: 'faq-10',
       question: 'Come posso registrarmi come azienda su AirStaff?',
-      answer: 'Per registrarti come azienda, ti basta visitare questo link: https://app.airstaff.it/auth/register e compilare il form di registrazione.'
+      answer: 'Per registrarti come azienda, visita questo link: https://app.airstaff.it/auth/register e compila il modulo di registrazione.'
     }
   ];
 
@@ -72,11 +73,28 @@ const FAQ: React.FC = () => {
     faq.answer.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Domande Frequenti - AirStaff</title>
-        <meta name="description" content="Trova le risposte alle domande più frequenti su AirStaff. Scopri come funziona la nostra piattaforma per la ricerca di lavoratori." />
+        <title>Domande Frequenti - AirStaff | FAQ su come funziona la piattaforma</title>
+        <meta name="description" content="Trova le risposte alle domande più frequenti su AirStaff. Scopri come funziona la nostra piattaforma per la ricerca di lavoratori tramite agenzie per il lavoro." />
+        <meta name="keywords" content="FAQ AirStaff, domande frequenti, come funziona AirStaff, agenzie per il lavoro, ricerca lavoratori" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqStructuredData)}
+        </script>
       </Helmet>
       
       <Navbar />
@@ -88,7 +106,7 @@ const FAQ: React.FC = () => {
               Domande <span className="bg-gradient-to-r from-airstaff-blue to-airstaff-pink bg-clip-text text-transparent">Frequenti</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Trova le risposte alle domande più comuni
+              Trova le risposte alle domande più comuni su AirStaff
             </p>
             
             {/* Search Box */}

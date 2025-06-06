@@ -12,7 +12,7 @@ const CTASection: React.FC = () => {
               Pronto a trovare i lavoratori perfetti per la tua azienda?
             </h2>
             <p className="text-white">
-              Prova AirStaff ora, è gratis! Richiedi accesso in anteprima.
+              Prova AirStaff ora, è gratis! Richiedi l'accesso in anteprima.
             </p>
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer">
               <GradientButton icon className="mt-4">
@@ -22,7 +22,7 @@ const CTASection: React.FC = () => {
           </div>
           <div className="hidden md:block h-full">
             <img 
-              alt="AirStaff Demo" 
+              alt="Interfaccia piattaforma AirStaff per la ricerca di lavoratori tramite agenzie per il lavoro" 
               className="h-full w-full object-cover"
               loading="lazy"
               src="/lovable-uploads/f6d3364e-be08-46ee-86b1-60df40371ea8.png"

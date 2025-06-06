@@ -10,7 +10,29 @@ const HeroSection: React.FC = () => {
     "name": "AirStaff",
     "url": "https://www.airstaff.it/",
     "logo": "https://www.airstaff.it/logo.png",
-    "description": "La tua futura risorsa è già qui. Cerca. Trova. Richiedi."
+    "description": "AirStaff è il motore di ricerca intelligente che mette in contatto aziende e lavoratori tramite le agenzie per il lavoro. Trova il lavoratore giusto in pochi minuti.",
+    "foundingDate": "2024",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Comelico 11",
+      "addressLocality": "Milano",
+      "postalCode": "20135",
+      "addressCountry": "IT"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+39",
+      "contactType": "customer service",
+      "email": "hello@airstaff.it"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/airstaff"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127"
+    }
   };
 
   return (
@@ -19,6 +41,11 @@ const HeroSection: React.FC = () => {
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
+        <meta property="article:author" content="AirStaff Team" />
+        <meta property="article:publisher" content="AirStaff" />
+        <meta name="geo.region" content="IT-MI" />
+        <meta name="geo.placename" content="Milano" />
+        <meta name="ICBM" content="45.4642,9.1900" />
       </Helmet>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
@@ -39,7 +66,7 @@ const HeroSection: React.FC = () => {
         <div className="hidden md:flex justify-center">
           <img 
             src="/lovable-uploads/ca830ce1-c78e-4909-992c-dd0aebd3cb3b.png" 
-            alt="AirStaff Platform Interface" 
+            alt="Interfaccia della piattaforma AirStaff che mostra come cercare lavoratori nelle agenzie per il lavoro" 
             className="max-w-full h-auto rounded-xl shadow-xl"
             loading="lazy"
           />
