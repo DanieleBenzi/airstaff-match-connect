@@ -32,7 +32,17 @@ const HeroSection: React.FC = () => {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
       "reviewCount": "127"
-    }
+    },
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "Lombardia"
+      },
+      {
+        "@type": "State", 
+        "name": "Veneto"
+      }
+    ]
   };
 
   return (
@@ -43,8 +53,8 @@ const HeroSection: React.FC = () => {
         </script>
         <meta property="article:author" content="AirStaff Team" />
         <meta property="article:publisher" content="AirStaff" />
-        <meta name="geo.region" content="IT-MI" />
-        <meta name="geo.placename" content="Milano" />
+        <meta name="geo.region" content="IT-LO,IT-VE" />
+        <meta name="geo.placename" content="Lombardia, Veneto" />
         <meta name="ICBM" content="45.4642,9.1900" />
       </Helmet>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">

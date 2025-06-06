@@ -53,8 +53,8 @@ const FAQ: React.FC = () => {
     },
     {
       id: 'faq-8',
-      question: 'Posso cercare lavoratori in tutta Italia?',
-      answer: 'Attualmente AirStaff è presente in Lombardia e Veneto. La disponibilità dipende dalle agenzie partner presenti nelle diverse regioni e città.'
+      question: 'In quali regioni opera AirStaff?',
+      answer: 'Attualmente AirStaff opera in Lombardia e Veneto, coprendo tutte le principali città e zone di queste regioni. La disponibilità di lavoratori dipende dalle agenzie partner presenti nelle diverse aree.'
     },
     {
       id: 'faq-9',
