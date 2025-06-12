@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, MapPin, Linkedin } from 'lucide-react';
 import Logo from './Logo';
@@ -15,7 +14,7 @@ const Footer: React.FC = () => {
               La tua futura risorsa è già qui. Cerca. Trova. Richiedi.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/airstaff" aria-label="LinkedIn" className="text-white hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/airstaff-it/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
