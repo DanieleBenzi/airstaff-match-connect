@@ -32,7 +32,7 @@ const Benefits: React.FC = () => {
           <BenefitCard 
             icon={<Rabbit size={24} />}
             title="Veloce"
-            description="In pochi minuti troviamo il lavoratore giusto per te in oltre 50 agenzie per il lavoro associate"
+            description="In pochi secondi troviamo il lavoratore giusto per te in oltre 50 agenzie per il lavoro associate"
           />
           <BenefitCard 
             icon={<Target size={24} />}
