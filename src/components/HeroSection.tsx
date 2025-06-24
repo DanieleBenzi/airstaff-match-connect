@@ -1,3 +1,4 @@
+
 import React from 'react';
 import GradientButton from './GradientButton';
 import { Helmet } from 'react-helmet-async';
@@ -76,7 +77,7 @@ const HeroSection: React.FC = () => {
           <img 
             src="/lovable-uploads/0a1bb08d-dd03-43d4-81ce-b32f96bf153e.png" 
             alt="Interfaccia della piattaforma AirStaff che mostra come cercare lavoratori nelle agenzie per il lavoro" 
-            className="max-w-full h-auto rounded-xl shadow-xl"
+            className="w-[110%] h-auto rounded-xl shadow-xl"
             loading="lazy"
           />
         </div>
