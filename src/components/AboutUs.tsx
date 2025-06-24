@@ -8,7 +8,7 @@ const AboutUs: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Chi Siamo</h2>
           <p className="text-lg text-black mb-8 leading-relaxed">
-            AirStaff è la piattaforma che permette alle aziende di cercare lavoratori direttamente nei database delle Agenzie Per il Lavoro (ApL) partner. Puoi filtrare per competenze, località e disponibilità per trovare la risorsa perfetta per la tua azienda.
+            AirStaff permette alle aziende di cercare lavoratori del settore logistico e industriale direttamente nei database delle Agenzie Per il Lavoro (APL) partner. Puoi filtrare per competenze, località e disponibilità per trovare la risorsa perfetta per la tua azienda.
           </p>
         </div>
       </div>
