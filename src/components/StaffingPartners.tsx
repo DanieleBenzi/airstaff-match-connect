@@ -18,16 +18,11 @@ const StaffingPartners: React.FC = () => {
     }
   };
 
-  // Example staffing partners logos - in a real scenario these would be actual partner logos
+  // Actual staffing partners with their logos
   const partners = [
-    { name: 'Partner 1', logo: 'placeholder.svg' },
-    { name: 'Partner 2', logo: 'placeholder.svg' },
-    { name: 'Partner 3', logo: 'placeholder.svg' },
-    { name: 'Partner 4', logo: 'placeholder.svg' },
-    { name: 'Partner 5', logo: 'placeholder.svg' },
-    { name: 'Partner 6', logo: 'placeholder.svg' },
-    { name: 'Partner 7', logo: 'placeholder.svg' },
-    { name: 'Partner 8', logo: 'placeholder.svg' },
+    { name: 'Relizont', logo: '/lovable-uploads/3710a5e6-2cc0-410c-ba8c-fb5c26cb5532.png' },
+    { name: 'Direzione Lavoro', logo: '/lovable-uploads/929af065-7dc5-4e09-9bab-f5d7fa5a9c29.png' },
+    { name: 'Only Job', logo: '/lovable-uploads/e629ccca-d93a-461e-9a59-71836fc3189d.png' },
   ];
 
   return (
@@ -56,11 +51,11 @@ const StaffingPartners: React.FC = () => {
           >
             {partners.map((partner, index) => (
               <div key={index} className="flex-none">
-                <div className="w-40 h-24 bg-white shadow-md rounded-lg flex items-center justify-center p-4">
+                <div className="w-60 h-32 bg-white shadow-md rounded-lg flex items-center justify-center p-6">
                   <img 
-                    src={`/${partner.logo}`} 
+                    src={partner.logo} 
                     alt={`${partner.name} logo`} 
-                    className="max-h-full max-w-full"
+                    className="max-h-full max-w-full object-contain"
                   />
                 </div>
               </div>

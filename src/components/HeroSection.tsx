@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GradientButton from './GradientButton';
 import { Helmet } from 'react-helmet-async';
@@ -63,7 +62,7 @@ const HeroSection: React.FC = () => {
             <span className="bg-gradient-to-r from-airstaff-blue to-airstaff-pink bg-clip-text text-transparent">AirStaff</span> - Cerca tra i <span className="text-[#D35B6F]">migliori lavoratori</span> per la <span className="text-black">logistica e industria</span>!
           </h1>
           <p className="text-lg md:text-xl text-black">
-            Rivoluzioniamo il personale industriale.
+            Rivoluzioniamo il modo di trovare personale industriale, insieme.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
