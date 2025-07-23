@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div>
             <Logo className="mb-6" />
             <p className="text-white mb-6">
-              Rivoluzioniamo il modo di trovare personale industriale, insieme.
+              Rivoluzioniamo il modo di trovare personale nel settore industriale, insieme.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/company/airstaff-it/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white hover:text-white transition-colors">
