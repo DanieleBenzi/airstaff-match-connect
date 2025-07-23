@@ -42,7 +42,7 @@ const Benefits: React.FC = () => {
           <BenefitCard 
             icon={<Clock size={24} />}
             title="Risparmia tempo"
-            description="AirStaff è lo SkyScanner del lavoro interinale: un'unica ricerca, decine di agenzie a portata di clic. Ti evitiamo ore al telefono e su Excel."
+            description="Un'unica ricerca, decine di agenzie a portata di clic. Ti evitiamo ore al telefono e su Excel."
           />
         </div>
       </div>

@@ -3,12 +3,13 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import HowItWorks from '@/components/HowItWorks';
+import MainFeatures from '@/components/MainFeatures';
 import Benefits from '@/components/Benefits';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import StaffingPartners from '@/components/StaffingPartners';
-import AboutUs from '@/components/AboutUs';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 const Index: React.FC = () => {
   const breadcrumbData = {
@@ -64,9 +65,17 @@ const Index: React.FC = () => {
       <main className="flex-grow">
         <HeroSection />
         <HowItWorks />
+        <MainFeatures />
         <Benefits />
-        
         <StaffingPartners />
+        <div className="text-center py-8">
+          <Link 
+            to="/faq" 
+            className="inline-flex items-center text-airstaff-pink hover:text-airstaff-blue transition-colors font-semibold"
+          >
+            Vai alle Domande Frequenti →
+          </Link>
+        </div>
         <CTASection />
       </main>
       <Footer />

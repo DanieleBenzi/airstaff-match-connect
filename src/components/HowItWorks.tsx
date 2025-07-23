@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, MessageCircle, Handshake } from 'lucide-react';
+import { Search, Filter, MessageCircle, Clock } from 'lucide-react';
 interface StepProps {
   icon: React.ReactNode;
   title: string;
@@ -29,14 +29,15 @@ const HowItWorks: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Come funziona</h2>
           <p className="text-lg text-black max-w-3xl mx-auto">
-            AirStaff ti dà <strong>accesso immediato</strong> ai database dei lavoratori di oltre 50 Agenzie Per il Lavoro. Filtri per competenze, zona e disponibilità e invii la richiesta in un clic. L'APL riceve la tua richiesta e ti risponde in poche ore. Zero perdita di tempo, tutta sostanza.
+            AirStaff è lo SkyScanner del lavoro interinale. Ti dà <strong>accesso immediato</strong> ai database dei lavoratori di oltre 50 Agenzie Per il Lavoro. Filtri per competenze, zona e disponibilità e invii la richiesta in un clic. L'APL riceve la tua richiesta e ti risponde in poche ore. Zero perdita di tempo, tutta sostanza.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <Step icon={<Search size={24} />} title="Cerca lavoratori" description="Cerca nei database delle APL partner i lavoratori di cui hai bisogno filtrando per competenze, località e disponibilità." position={1} />
-          <Step icon={<MessageCircle size={24} />} title="Richiedi la risorsa" description="Quando trovi il lavoratore giusto, invia una richiesta di contatto all'agenzia per il lavoro che gestisce la risorsa." position={2} />
-          <Step icon={<Handshake size={24} />} title="Finalizza" description="L'agenzia per il lavoro ti contatterà per presentarti il lavoratore richiesto e inserirlo nel tuo organico" position={3} />
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <Step icon={<Search size={24} />} title="Cerca" description="Inizia la ricerca dei lavoratori nei database delle APL partner." position={1} />
+          <Step icon={<Filter size={24} />} title="Filtra" description="Filtra per competenze, località e disponibilità per trovare il candidato perfetto." position={2} />
+          <Step icon={<MessageCircle size={24} />} title="Richiedi risorsa" description="Invia una richiesta di contatto all'agenzia per il lavoro." position={3} />
+          <Step icon={<Clock size={24} />} title="Ricevi risposta in poche ore" description="L'APL ti contatterà per presentarti il lavoratore richiesto." position={4} />
         </div>
       </div>
     </section>;
