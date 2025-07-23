@@ -63,7 +63,7 @@ const HeroSection: React.FC = () => {
             <span className="bg-gradient-to-r from-airstaff-blue to-airstaff-pink bg-clip-text text-transparent">AirStaff</span> - Cerca tra i <span className="text-[#D35B6F]">migliori lavoratori</span> per la <span className="text-black">logistica e industria</span>!
           </h1>
           <p className="text-lg md:text-xl text-black">
-            Rivoluzioniamo il modo di trovare personale nel settore, insieme.
+            Rivoluzioniamo il modo di trovare personale nel settore industriale, insieme.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
@@ -75,7 +75,7 @@ const HeroSection: React.FC = () => {
         </div>
         <div className="hidden md:flex justify-center">
           <img 
-            src="/lovable-uploads/0a1bb08d-dd03-43d4-81ce-b32f96bf153e.png" 
+            src="/lovable-uploads/8b394d39-6908-44ea-98cd-58f4e39f5543.png" 
             alt="Interfaccia della piattaforma AirStaff che mostra come cercare lavoratori nelle agenzie per il lavoro" 
             className="w-[110%] h-auto"
             loading="lazy"
