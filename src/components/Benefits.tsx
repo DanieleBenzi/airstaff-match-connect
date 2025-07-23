@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Rabbit, Target, ThumbsUp } from 'lucide-react';
+import { Rabbit, Target, Clock } from 'lucide-react';
 
 interface BenefitCardProps {
   icon: React.ReactNode;
@@ -32,17 +32,17 @@ const Benefits: React.FC = () => {
           <BenefitCard 
             icon={<Rabbit size={24} />}
             title="Veloce"
-            description="In pochi secondi troviamo il lavoratore giusto per te in oltre 50 agenzie per il lavoro associate"
+            description="Trova in pochi secondi i lavoratori più adatti da oltre 50 agenzie per il lavoro. AirStaff li aggrega e li filtra per te."
           />
           <BenefitCard 
             icon={<Target size={24} />}
             title="Gratuito"
-            description="AirStaff non chiede nessun tipo di commissione all'azienda, per sempre."
+            description="AirStaff non chiede nessun tipo di commissione all'azienda."
           />
           <BenefitCard 
-            icon={<ThumbsUp size={24} />}
-            title="Risultati Pertinenti"
-            description="AirStaff mostra solo lavoratori effettivamente disponibili che rispondono alla tua esigenza."
+            icon={<Clock size={24} />}
+            title="Risparmia tempo"
+            description="AirStaff è lo SkyScanner del lavoro interinale: un'unica ricerca, decine di agenzie a portata di clic. Ti evitiamo ore al telefono e su Excel."
           />
         </div>
       </div>

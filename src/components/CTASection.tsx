@@ -9,14 +9,14 @@ const CTASection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="p-10 md:p-12 lg:p-16 space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-              Pronto a trovare i lavoratori perfetti per la tua azienda?
+              Trova subito i lavoratori giusti, senza CV da filtrare né tempo perso
             </h2>
             <p className="text-white">
-              Prova AirStaff ora, è gratis! Richiedi l'accesso in anteprima.
+              Prova AirStaff gratis e inizia a ricevere profili compatibili in poche ore.
             </p>
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer">
               <GradientButton icon className="mt-4">
-                Prova AirStaff
+                Scopri i lavoratori disponibili
               </GradientButton>
             </a>
           </div>

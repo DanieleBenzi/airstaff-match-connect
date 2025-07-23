@@ -63,12 +63,12 @@ const HeroSection: React.FC = () => {
             <span className="bg-gradient-to-r from-airstaff-blue to-airstaff-pink bg-clip-text text-transparent">AirStaff</span> - Cerca tra i <span className="text-[#D35B6F]">migliori lavoratori</span> per la <span className="text-black">logistica e industria</span>!
           </h1>
           <p className="text-lg md:text-xl text-black">
-            Rivoluzioniamo il modo di trovare personale industriale, insieme.
+            Rivoluzioniamo il modo di trovare personale nel settore, insieme.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <GradientButton icon className="w-full sm:w-auto px-8 py-3 text-lg">
-                Prova AirStaff
+                Scopri i lavoratori disponibili
               </GradientButton>
             </a>
           </div>
