@@ -21,7 +21,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
 
 const MainFeatures: React.FC = () => {
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24">
+    <section className="py-20 px-6 md:px-12 lg:px-24 bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Le funzionalità principali</h2>
@@ -40,13 +40,13 @@ const MainFeatures: React.FC = () => {
           />
           <FeatureCard 
             icon={<Users size={24} />}
-            title="Posizioni gratuite"
-            description="Possibilità di aprire una posizione gratuitamente se non trovi talenti disponibili."
+            title="Apri una posizione"
+            description="Non trovi il lavoratore giusto per te? No problem, te lo cerchiamo noi."
           />
           <FeatureCard 
             icon={<Bell size={24} />}
             title="Alert automatici"
-            description="Ricevi notifiche automatiche quando sono disponibili nuovi talenti liberi."
+            description="Ricevi notifiche automatiche quando nuovi talenti sono liberi."
           />
         </div>
       </div>

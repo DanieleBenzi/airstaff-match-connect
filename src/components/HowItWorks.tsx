@@ -34,8 +34,8 @@ const HowItWorks: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <Step icon={<Search size={24} />} title="Cerca" description="Inizia la ricerca dei lavoratori nei database delle APL partner." position={1} />
-          <Step icon={<Filter size={24} />} title="Filtra" description="Filtra per competenze, località e disponibilità per trovare il candidato perfetto." position={2} />
+          <Step icon={<Search size={24} />} title="Cerca" description="Lascia che l'IA trovi i migliori risultati per te" position={1} />
+          <Step icon={<Filter size={24} />} title="Filtra" description="Filtra per competenze, località e disponibilità per trovare il lavoratore perfetto." position={2} />
           <Step icon={<MessageCircle size={24} />} title="Richiedi risorsa" description="Invia una richiesta di contatto all'agenzia per il lavoro." position={3} />
           <Step icon={<Clock size={24} />} title="Ricevi risposta in poche ore" description="L'APL ti contatterà per presentarti il lavoratore richiesto." position={4} />
         </div>
