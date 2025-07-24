@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                 <Link to="/" className="text-white hover:text-white transition-colors">Home</Link>
               </li>
               <li>
-                <Link to="/faq" className="text-white hover:text-white transition-colors">Domande frequenti</Link>
+                <a href="https://airstaff.it/faq#domande-frequenti" className="text-white hover:text-white transition-colors">Domande frequenti</a>
               </li>
             </ul>
           </div>
