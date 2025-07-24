@@ -2,10 +2,8 @@ import React from 'react';
 import { Mail, MapPin, Linkedin } from 'lucide-react';
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
-
 const Footer: React.FC = () => {
-  return (
-    <footer className="bg-gray-900 text-white py-16 px-6 md:px-12 lg:px-24">
+  return <footer className="bg-gray-900 text-white px-6 md:px-12 lg:px-24 py-[30px]">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           <div>
@@ -79,8 +77,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

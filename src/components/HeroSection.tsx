@@ -1,8 +1,6 @@
-
 import React from 'react';
 import GradientButton from './GradientButton';
 import { Helmet } from 'react-helmet-async';
-
 const HeroSection: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
@@ -25,28 +23,21 @@ const HeroSection: React.FC = () => {
       "contactType": "customer service",
       "email": "hello@airstaff.it"
     },
-    "sameAs": [
-      "https://www.linkedin.com/company/airstaff"
-    ],
+    "sameAs": ["https://www.linkedin.com/company/airstaff"],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
       "reviewCount": "127"
     },
-    "areaServed": [
-      {
-        "@type": "State",
-        "name": "Lombardia"
-      },
-      {
-        "@type": "State", 
-        "name": "Veneto"
-      }
-    ]
+    "areaServed": [{
+      "@type": "State",
+      "name": "Lombardia"
+    }, {
+      "@type": "State",
+      "name": "Veneto"
+    }]
   };
-
-  return (
-    <section className="py-20 md:py-32 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-gray-50 to-gray-100">
+  return <section className="md:py-32 md:px-12 lg:px-24 bg-gradient-to-r from-gray-50 to-gray-100 px-[20px] py-[30px]">
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
@@ -77,16 +68,9 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
         <div className="hidden md:flex justify-center">
-          <img 
-            src="/lovable-uploads/8b394d39-6908-44ea-98cd-58f4e39f5543.png" 
-            alt="Interfaccia della piattaforma AirStaff che mostra come cercare lavoratori nelle agenzie per il lavoro" 
-            className="w-[110%] h-auto"
-            loading="lazy"
-          />
+          <img src="/lovable-uploads/8b394d39-6908-44ea-98cd-58f4e39f5543.png" alt="Interfaccia della piattaforma AirStaff che mostra come cercare lavoratori nelle agenzie per il lavoro" className="w-[110%] h-auto" loading="lazy" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
