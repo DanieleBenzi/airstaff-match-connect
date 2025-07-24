@@ -70,11 +70,13 @@ const Index: React.FC = () => {
         <StaffingPartners />
         <div className="text-center py-8">
           <p className="text-lg text-gray-600">
-            Hai domande? Scrivi a{' '}
+            <span className="font-bold">Hai domande?</span>
+            <br />
+            Scrivici a{' '}
             <a href="mailto:hello@airstaff.it" className="text-airstaff-pink hover:text-airstaff-blue transition-colors font-semibold">
               hello@airstaff.it
             </a>
-            {' '}oppure vai alle{' '}
+            {' '}oppure guarda le{' '}
             <Link 
               to="/faq" 
               className="text-airstaff-pink hover:text-airstaff-blue transition-colors font-semibold"
