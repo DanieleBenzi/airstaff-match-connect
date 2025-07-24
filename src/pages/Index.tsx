@@ -77,12 +77,12 @@ const Index: React.FC = () => {
               hello@airstaff.it
             </a>
             {' '}oppure guarda le{' '}
-            <a 
-              href="https://airstaff.it/faq#domande-frequenti" 
+            <Link 
+              to="/faq" 
               className="text-airstaff-pink hover:text-airstaff-blue transition-colors font-semibold"
             >
               Domande Frequenti
-            </a>
+            </Link>
           </p>
         </div>
         <CTASection />
