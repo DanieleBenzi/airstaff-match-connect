@@ -69,12 +69,19 @@ const Index: React.FC = () => {
         <Benefits />
         <StaffingPartners />
         <div className="text-center py-8">
-          <Link 
-            to="/faq" 
-            className="inline-flex items-center text-airstaff-pink hover:text-airstaff-blue transition-colors font-semibold"
-          >
-            Vai alle Domande Frequenti →
-          </Link>
+          <p className="text-lg text-gray-600">
+            Hai domande? Scrivi a{' '}
+            <a href="mailto:hello@airstaff.it" className="text-airstaff-pink hover:text-airstaff-blue transition-colors font-semibold">
+              hello@airstaff.it
+            </a>
+            {' '}oppure vai alle{' '}
+            <Link 
+              to="/faq" 
+              className="text-airstaff-pink hover:text-airstaff-blue transition-colors font-semibold"
+            >
+              Domande Frequenti
+            </Link>
+          </p>
         </div>
         <CTASection />
       </main>

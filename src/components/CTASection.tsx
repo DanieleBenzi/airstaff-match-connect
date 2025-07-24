@@ -16,7 +16,7 @@ const CTASection: React.FC = () => {
             </p>
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer">
               <GradientButton icon className="mt-4">
-                Scopri i lavoratori disponibili
+                Inizia la ricerca
               </GradientButton>
             </a>
           </div>

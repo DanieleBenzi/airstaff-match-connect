@@ -22,7 +22,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({ icon, title, description }) =
 
 const Benefits: React.FC = () => {
   return (
-    <section id="vantaggi" className="py-20 px-6 md:px-12 lg:px-24 bg-gray-50">
+    <section id="vantaggi" className="py-20 px-6 md:px-12 lg:px-24">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Vantaggi per te e la tua azienda:</h2>

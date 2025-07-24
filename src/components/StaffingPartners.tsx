@@ -26,12 +26,12 @@ const StaffingPartners: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24">
+    <section className="py-20 px-6 md:px-12 lg:px-24 bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Le staffing partner</h2>
           <p className="text-lg text-black max-w-3xl mx-auto">
-            AirStaff ti mette in contatto con le principali agenzie per il lavoro in Italia.
+            Le agenzie per il lavoro che credono in noi:
           </p>
         </div>
 
