@@ -15,26 +15,36 @@ import {
 const FAQ: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
+  // Function to render markdown-like text
+  const renderAnswer = (answer: string) => {
+    // Replace **text** with <strong>text</strong>
+    const boldText = answer.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    // Replace [text](url) with <a href="url">text</a>
+    const linkedText = boldText.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-airstaff-blue hover:text-airstaff-pink transition-colors underline">$1</a>');
+    
+    return <span dangerouslySetInnerHTML={{ __html: linkedText }} />;
+  };
+
   const faqs = [
     {
       id: 'faq-1',
       question: 'Cos\'è AirStaff e come funziona?',
-      answer: 'AirStaff è una piattaforma che permette alle aziende di cercare lavoratori direttamente nei database delle Agenzie Per il Lavoro (ApL) partner. Puoi filtrare per competenze, località e disponibilità per trovare la risorsa perfetta per la tua azienda.'
+      answer: 'AirStaff è una piattaforma basata sull\'intelligenza artificiale che permette alle aziende di cercare **lavoratori** **direttamente** nei database delle Agenzie Per il Lavoro (APL) partner. Puoi filtrare per competenze, località e disponibilità per trovare la risorsa perfetta per la tua azienda.'
     },
     {
       id: 'faq-2',
-      question: 'Come posso richiedere un lavoratore attraverso AirStaff?',
-      answer: 'Una volta trovato il lavoratore che ti interessa, puoi inviare gratuitamente una richiesta di contatto direttamente all\'agenzia per il lavoro (ApL) che gestisce la risorsa. L\'agenzia ti contatterà per presentarti il lavoratore e procedere con l\'inserimento nel tuo organico.'
+      question: 'Come posso mettermi in contatto con un lavoratore attraverso AirStaff?',
+      answer: 'Non puoi metterti in contatto direttamente con il lavoratore. Una volta trovato il lavoratore che ti interessa, puoi inviare **gratuitamente** una richiesta di contatto direttamente all\'agenzia per il lavoro (APL) che gestisce la risorsa. L\'APL ti contatterà per presentarti il lavoratore e procedere con l\'inserimento nel tuo organico.'
     },
     {
       id: 'faq-3',
       question: 'Quali sono i costi per utilizzare AirStaff?',
-      answer: 'AirStaff è completamente gratuito per le aziende che cercano lavoratori. Non ci sono costi da sostenere né abbonamenti da sottoscrivere.'
+      answer: 'Nessuno. AirStaff è completamente gratuito per le aziende che cercano lavoratori. Non ci sono costi da sostenere né abbonamenti da sottoscrivere. Devi solo registrarti e creare un account.'
     },
     {
       id: 'faq-4',
       question: 'Che tipo di lavoratori posso trovare su AirStaff?',
-      answer: 'Puoi trovare lavoratori di tutti i settori e livelli di esperienza, dai profili junior a quelli senior, in ambiti come IT, logistica, vendite, amministrazione, produzione e molti altri. Le competenze disponibili dipendono dalle agenzie partner collegate alla piattaforma.'
+      answer: 'Puoi trovare lavoratori di tutti i settori e livelli di esperienza, dai profili junior a quelli senior, in ambiti come logistica, Industria, vendite, amministrazione, produzione e molti altri. Le competenze disponibili dipendono dalle agenzie partner collegate alla piattaforma.'
     },
     {
       id: 'faq-5',
@@ -54,7 +64,7 @@ const FAQ: React.FC = () => {
     {
       id: 'faq-8',
       question: 'In quali regioni opera AirStaff?',
-      answer: 'Attualmente AirStaff opera in Lombardia e Veneto, coprendo tutte le principali città e zone di queste regioni. La disponibilità di lavoratori dipende dalle agenzie partner presenti nelle diverse aree.'
+      answer: 'Attualmente AirStaff opera in Lombardia, coprendo tutte le principali città e zone di questa regione. La disponibilità di lavoratori dipende dalle agenzie partner presenti nelle diverse aree.'
     },
     {
       id: 'faq-9',
@@ -64,7 +74,7 @@ const FAQ: React.FC = () => {
     {
       id: 'faq-10',
       question: 'Come posso registrarmi come azienda su AirStaff?',
-      answer: 'Per registrarti come azienda, visita questo link: https://app.airstaff.it/auth/register e compila il modulo di registrazione.'
+      answer: 'Per registrarti come azienda, visita questo link: [https://app.airstaff.it/auth/register](https://app.airstaff.it/auth/register), seleziona "mi sto registrando come azienda" e compila il modulo di registrazione.'
     }
   ];
 
@@ -102,7 +112,7 @@ const FAQ: React.FC = () => {
       <main className="py-16 px-6 md:px-12 lg:px-24">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-black mb-6">
+            <h1 id="domande-frequenti" className="text-4xl md:text-5xl font-bold text-black mb-6">
               Domande <span className="bg-gradient-to-r from-airstaff-blue to-airstaff-pink bg-clip-text text-transparent">Frequenti</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
@@ -136,7 +146,7 @@ const FAQ: React.FC = () => {
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 leading-relaxed pt-4">
-                      {faq.answer}
+                      {renderAnswer(faq.answer)}
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -159,7 +169,7 @@ const FAQ: React.FC = () => {
               Non hai trovato quello che cercavi?
             </h2>
             <p className="text-gray-600 mb-6">
-              Contattaci direttamente per ricevere assistenza personalizzata
+              Scrivici una mail per ricevere assistenza personalizzata. Ti risponderemo in meno di 2h
             </p>
             <a 
               href="mailto:hello@airstaff.it" 
