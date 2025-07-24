@@ -24,7 +24,7 @@ const Step: React.FC<StepProps> = ({
     </div>;
 };
 const HowItWorks: React.FC = () => {
-  return <section id="come-funziona" className="px-6 md:px-12 lg:px-24 py-[30px]">
+  return <section id="come-funziona" className="py-20 px-6 md:px-12 lg:px-24">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Come funziona</h2>
