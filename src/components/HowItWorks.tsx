@@ -39,6 +39,22 @@ const HowItWorks: React.FC = () => {
           <Step icon={<MessageCircle size={24} />} title="Richiedi risorsa" description="Invia una richiesta di contatto all'agenzia per il lavoro." position={3} />
           <Step icon={<Clock size={24} />} title="Ricevi risposta in poche ore" description="L'APL ti contatterà per presentarti il lavoratore richiesto." position={4} />
         </div>
+
+        {/* Video YouTube */}
+        <div className="mt-16 flex justify-center">
+          <div className="w-full max-w-4xl">
+            <div className="aspect-video">
+              <iframe
+                className="w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/W-VwNq4Tci4"
+                title="Come funziona AirStaff"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </section>;
 };
