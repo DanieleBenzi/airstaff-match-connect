@@ -46,7 +46,7 @@ const HowItWorks: React.FC = () => {
             <div className="aspect-video">
               <iframe
                 className="w-full h-full rounded-lg shadow-lg"
-                src="https://www.youtube.com/embed/W-VwNq4Tci4"
+                src="https://www.youtube.com/embed/3XnCvQqunKc"
                 title="Come funziona AirStaff"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
