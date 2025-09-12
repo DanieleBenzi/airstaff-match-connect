@@ -28,7 +28,7 @@ const MainFeatures: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <FeatureCard icon={<Brain size={24} />} title="Ricerca avanzata basata sull'intelligenza artificiale" description="Ricerca oltre che per ruolo anche per competenze, CCNL e disponibilità." />
           <FeatureCard icon={<TrendingUp size={24} />} title="Lead tracking integrati" description="Monitora e gestisci tutte le tue richieste di personale in un'unica dashboard." />
-          <FeatureCard icon={<Users size={24} />} title="Apri una posizione" description="Non trovi il lavoratore giusto per te? No problem, te lo cerchiamo noi." />
+          <FeatureCard icon={<Users size={24} />} title="Apri una posizione" description="Non trovi il lavoratore giusto per te? No problem, dicci cosa ti serve e noi lo giriamo al nostro network di APL." />
           <FeatureCard icon={<Bell size={24} />} title="Alert automatici" description="Ricevi notifiche automatiche quando nuovi talenti sono liberi." />
         </div>
       </div>
