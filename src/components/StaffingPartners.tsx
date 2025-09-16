@@ -28,7 +28,7 @@ const StaffingPartners: React.FC = () => {
     name: 'Only Job',
     logo: '/lovable-uploads/e629ccca-d93a-461e-9a59-71836fc3189d.png'
   }];
-  return <section className="px-6 md:px-12 lg:px-24 bg-gray-50 py-[30px]">
+  return <section className="px-6 md:px-12 lg:px-24 py-[30px]">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Le staffing partner</h2>
