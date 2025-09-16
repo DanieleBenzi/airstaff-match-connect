@@ -16,7 +16,7 @@ const BookDemoSection: React.FC = () => {
             rel="noopener noreferrer"
           >
             <GradientButton>
-              Prenota demo
+              Prenota una demo
             </GradientButton>
           </a>
         </div>

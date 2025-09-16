@@ -70,7 +70,7 @@ const Index: React.FC = () => {
         <Benefits />
         <BookDemoSection />
         <StaffingPartners />
-        <div className="text-center py-8">
+        <div className="text-center py-8 bg-gray-50">
           <p className="text-lg text-gray-600">
             <span className="font-bold">Hai domande?</span>
             <br />
