@@ -8,6 +8,7 @@ import Benefits from '@/components/Benefits';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import StaffingPartners from '@/components/StaffingPartners';
+import BookDemoSection from '@/components/BookDemoSection';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
@@ -67,6 +68,7 @@ const Index: React.FC = () => {
         <HowItWorks />
         <MainFeatures />
         <Benefits />
+        <BookDemoSection />
         <StaffingPartners />
         <div className="text-center py-8">
           <p className="text-lg text-gray-600">
