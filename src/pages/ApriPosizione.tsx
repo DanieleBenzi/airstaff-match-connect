@@ -32,15 +32,12 @@ const ApriPosizione: React.FC = () => {
             </p>
             
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <script dangerouslySetInnerHTML={{
-                __html: `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`
-              }} />
-              <a 
-                href="https://it.surveymonkey.com" 
-                style={{ font: '12px Helvetica, sans-serif', color: '#999', textDecoration: 'none' }}
-              >
-                Crea la tua indagine per il feedback degli utenti
-              </a>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html:
+                    `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`,
+                }}
+              />
             </div>
           </div>
         </section>
