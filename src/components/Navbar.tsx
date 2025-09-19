@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center">
           <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Inizia la ricerca
+              Prova airstaff
             </GradientButton>
           </a>
         </div>
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden flex justify-end">
           <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Inizia la ricerca
+              Prova airstaff
             </GradientButton>
           </a>
         </div>

@@ -57,12 +57,12 @@ const HeroSection: React.FC = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-black">
-            Trova il personale giusto per la tua azienda in pochi secondi. Nessuna perdita di tempo. Tutto in un'unica piattaforma. 🔥
+            Riduci del 50% i tempi di assunzione: con Airstaff vedi i profili già disponibili dalle agenzie per il lavoro, filtrati per ruolo, CCNL, certificazioni e zona. 🔥
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <GradientButton icon className="w-full sm:w-auto px-8 py-3 text-lg">
-                Inizia la ricerca
+                Prova airstaff
               </GradientButton>
             </a>
           </div>
