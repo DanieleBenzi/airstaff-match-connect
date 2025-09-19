@@ -10,6 +10,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import CookiePolicy from "./pages/CookiePolicy";
 import FAQ from "./pages/FAQ";
+import ApriPosizione from "./pages/ApriPosizione";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/cookie-policy" element={<CookiePolicy />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/apri-posizione" element={<ApriPosizione />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

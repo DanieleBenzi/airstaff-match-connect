@@ -19,13 +19,16 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-6 text-white">Links Utili</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Link utili</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/" className="text-white hover:text-white transition-colors">Home</Link>
               </li>
               <li>
                 <Link to="/faq" className="text-white hover:text-white transition-colors">Domande frequenti</Link>
+              </li>
+              <li>
+                <Link to="/apri-posizione" className="text-white hover:text-white transition-colors">Apri una posizione</Link>
               </li>
             </ul>
           </div>
