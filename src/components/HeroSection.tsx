@@ -62,7 +62,7 @@ const HeroSection: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <GradientButton icon className="w-full sm:w-auto px-8 py-3 text-lg">
-                Prova airstaff
+                Prova AirStaff
               </GradientButton>
             </a>
           </div>
