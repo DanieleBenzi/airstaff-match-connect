@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
 
 const ApriPosizione: React.FC = () => {
+  useEffect(() => {
+    // Rimuovi script esistenti
+    const existing = document.getElementById('smcx-sdk');
+    if (existing) existing.remove();
+
+    // Crea e inserisci il nuovo script
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.id = 'smcx-sdk';
+    script.innerHTML = `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`;
+    document.head.appendChild(script);
+
+    return () => {
+      const scriptToRemove = document.getElementById('smcx-sdk');
+      if (scriptToRemove) scriptToRemove.remove();
+    };
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
@@ -31,7 +50,11 @@ const ApriPosizione: React.FC = () => {
               Nel giro di 72h, le nostre APL partner ti contatteranno e ti proporranno dei lavoratori in linea con la tua ricerca!
             </p>
             
-            {/* Sezione per future integrazioni */}
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <div id="smcx-survey-container">
+                {/* SurveyMonkey widget will be injected here */}
+              </div>
+            </div>
           </div>
         </section>
       </main>
