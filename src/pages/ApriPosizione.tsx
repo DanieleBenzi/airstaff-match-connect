@@ -34,6 +34,11 @@ const ApriPosizione: React.FC = () => {
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <script
                 dangerouslySetInnerHTML={{
+                  __html: `(() => { try { var s=document.getElementById('smcx-sdk'); if(s&&s.parentNode) s.parentNode.removeChild(s); if (typeof window!== 'undefined' && window.SMCX) { try { delete window.SMCX; } catch(e){} } } catch(e){} })();`
+                }}
+              />
+              <script
+                dangerouslySetInnerHTML={{
                   __html: `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`
                 }}
               />
