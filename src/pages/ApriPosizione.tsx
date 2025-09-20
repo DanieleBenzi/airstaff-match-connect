@@ -5,21 +5,29 @@ import { Helmet } from 'react-helmet-async';
 
 const ApriPosizione: React.FC = () => {
   useEffect(() => {
-    // Rimuovi script esistenti
-    const existing = document.getElementById('smcx-sdk');
-    if (existing) existing.remove();
+    // Rimuovi eventuali script precedenti
+    const existingExternal = document.getElementById('smcx-sdk');
+    if (existingExternal) existingExternal.remove();
+    const existingLoader = document.getElementById('smcx-loader');
+    if (existingLoader) existingLoader.remove();
 
-    // Crea e inserisci il nuovo script
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.async = true;
-    script.id = 'smcx-sdk';
-    script.innerHTML = `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`;
-    document.head.appendChild(script);
+    // Inserisci lo script loader che carica il widget
+    const loader = document.createElement('script');
+    loader.type = 'text/javascript';
+    loader.async = true;
+    loader.id = 'smcx-loader';
+    loader.innerHTML = `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`;
+    document.body.appendChild(loader);
 
     return () => {
-      const scriptToRemove = document.getElementById('smcx-sdk');
-      if (scriptToRemove) scriptToRemove.remove();
+      const ext = document.getElementById('smcx-sdk');
+      if (ext) ext.remove();
+      const ld = document.getElementById('smcx-loader');
+      if (ld) ld.remove();
+      // @ts-ignore
+      if (typeof window !== 'undefined' && (window as any).SMCX) {
+        try { delete (window as any).SMCX; } catch {}
+      }
     };
   }, []);
 
