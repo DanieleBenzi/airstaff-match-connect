@@ -11,7 +11,7 @@ const BookDemoSection: React.FC = () => {
         </p>
         <div className="flex justify-center">
           <a 
-            href="https://calendly.com/daniele-benzi-db/30min" 
+            href="https://calendly.com/airstaff_ita/30min" 
             target="_blank" 
             rel="noopener noreferrer"
           >

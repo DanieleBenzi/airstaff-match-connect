@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
 
 const ApriPosizione: React.FC = () => {
+  useEffect(() => {
+    const existing = document.getElementById('smcx-sdk');
+    if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
+
+    const inlineScript = document.createElement('script');
+    inlineScript.type = 'text/javascript';
+    inlineScript.async = true;
+    inlineScript.innerHTML = `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`;
+    document.body.appendChild(inlineScript);
+
+    return () => {
+      const smcx = document.getElementById('smcx-sdk');
+      if (smcx && smcx.parentNode) smcx.parentNode.removeChild(smcx);
+      if (inlineScript && inlineScript.parentNode) inlineScript.parentNode.removeChild(inlineScript);
+      // @ts-ignore
+      if (typeof window !== 'undefined' && (window as any).SMCX) {
+        try { delete (window as any).SMCX; } catch {}
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
@@ -32,12 +53,7 @@ const ApriPosizione: React.FC = () => {
             </p>
             
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <script
-                dangerouslySetInnerHTML={{
-                  __html:
-                    `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`,
-                }}
-              />
+              {/* SurveyMonkey widget injected via useEffect */}
             </div>
           </div>
         </section>
