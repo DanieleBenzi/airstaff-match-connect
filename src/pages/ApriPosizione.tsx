@@ -1,36 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
 
 const ApriPosizione: React.FC = () => {
-  useEffect(() => {
-    // Rimuovi eventuali script precedenti
-    const existingExternal = document.getElementById('smcx-sdk');
-    if (existingExternal) existingExternal.remove();
-    const existingLoader = document.getElementById('smcx-loader');
-    if (existingLoader) existingLoader.remove();
-
-    // Inserisci lo script loader che carica il widget
-    const loader = document.createElement('script');
-    loader.type = 'text/javascript';
-    loader.async = true;
-    loader.id = 'smcx-loader';
-    loader.innerHTML = `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`;
-    document.body.appendChild(loader);
-
-    return () => {
-      const ext = document.getElementById('smcx-sdk');
-      if (ext) ext.remove();
-      const ld = document.getElementById('smcx-loader');
-      if (ld) ld.remove();
-      // @ts-ignore
-      if (typeof window !== 'undefined' && (window as any).SMCX) {
-        try { delete (window as any).SMCX; } catch {}
-      }
-    };
-  }, []);
-
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
@@ -59,9 +32,11 @@ const ApriPosizione: React.FC = () => {
             </p>
             
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div id="smcx-survey-container">
-                {/* SurveyMonkey widget will be injected here */}
-              </div>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`
+                }}
+              />
             </div>
           </div>
         </section>
