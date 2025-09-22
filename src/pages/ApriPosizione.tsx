@@ -1,42 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
 
 const ApriPosizione: React.FC = () => {
-  const surveyRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    try {
-      const existing = document.getElementById('smcx-sdk');
-      if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
-      // @ts-ignore
-      if (typeof window !== 'undefined' && (window as any).SMCX) {
-        try { delete (window as any).SMCX; } catch {}
-      }
-    } catch {}
-
-    if (surveyRef.current) {
-      const inline = document.createElement('script');
-      inline.type = 'text/javascript';
-      inline.async = true;
-      inline.innerHTML = `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`;
-      surveyRef.current.appendChild(inline);
-    }
-
-    return () => {
-      try {
-        const existing2 = document.getElementById('smcx-sdk');
-        if (existing2 && existing2.parentNode) existing2.parentNode.removeChild(existing2);
-        if (surveyRef.current) surveyRef.current.innerHTML = '';
-        // @ts-ignore
-        if (typeof window !== 'undefined' && (window as any).SMCX) {
-          try { delete (window as any).SMCX; } catch {}
-        }
-      } catch {}
-    };
-  }, []);
-
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
@@ -65,7 +32,11 @@ const ApriPosizione: React.FC = () => {
             </p>
             
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div ref={surveyRef} />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdw44d65fYrkc5le4GIspU_2FEXQeYLWIYieWmr5JusKySk.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");`
+                }}
+              />
             </div>
           </div>
         </section>
