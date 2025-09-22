@@ -29,6 +29,19 @@ const ApriPosizione: React.FC = () => {
               Nel giro di 72h, le nostre APL partner ti contatteranno e ti proporranno dei lavoratori in linea con la tua ricerca!
             </p>
             
+            {/* SurveyMonkey Form */}
+            <div className="mt-8 mb-16">
+              <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
+                <iframe 
+                  src="https://it.surveymonkey.com/r/D58SBND"
+                  width="100%"
+                  height="600"
+                  frameBorder="0"
+                  className="w-full"
+                  title="Form di Registrazione Posizione"
+                />
+              </div>
+            </div>
             
           </div>
         </section>
