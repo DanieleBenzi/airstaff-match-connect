@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 <Link to="/faq" className="text-white hover:text-white transition-colors">Domande frequenti</Link>
               </li>
               <li>
-                <Link to="/apri-posizione" className="text-white hover:text-white transition-colors">Apri una posizione</Link>
+                <Link to="/apri-posizione" className="text-white hover:text-white transition-colors">Apri una posizione - GRATIS</Link>
               </li>
             </ul>
           </div>
