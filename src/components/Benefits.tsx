@@ -26,7 +26,7 @@ const Benefits: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <BenefitCard icon={<Rabbit size={24} />} title="Veloce" description="Trova in pochi secondi i lavoratori più adatti da oltre 50 agenzie per il lavoro. AirStaff li aggrega e li filtra per te." />
+          <BenefitCard icon={<Rabbit size={24} />} title="Veloce" description="Trova in pochi secondi i lavoratori più adatti da oltre 20 agenzie per il lavoro. AirStaff li aggrega e li filtra per te." />
           <BenefitCard icon={<Target size={24} />} title="Gratuito" description="AirStaff non chiede nessun tipo di commissione all'azienda." />
           <BenefitCard icon={<Clock size={24} />} title="Risparmia tempo" description="Un'unica ricerca, decine di agenzie a portata di clic. Ti evitiamo ore al telefono e su Excel." />
         </div>

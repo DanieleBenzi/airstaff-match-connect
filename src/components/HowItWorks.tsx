@@ -29,7 +29,7 @@ const HowItWorks: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Come funziona</h2>
           <p className="text-lg text-black max-w-3xl mx-auto">
-            AirStaff è lo SkyScanner del lavoro interinale. Ti dà <strong>accesso immediato</strong> ai database dei lavoratori di oltre 50 Agenzie Per il Lavoro. Filtri per competenze, zona e disponibilità e invii la richiesta in un clic. L'APL riceve la tua richiesta e ti risponde in poche ore. Zero perdita di tempo, tutta sostanza.
+            AirStaff è lo SkyScanner del lavoro interinale. Ti dà <strong>accesso immediato</strong> ai database dei lavoratori di oltre 20 Agenzie Per il Lavoro. Filtri per competenze, zona e disponibilità e invii la richiesta in un clic. L'APL riceve la tua richiesta e ti risponde in poche ore. Zero perdita di tempo, tutta sostanza.
           </p>
         </div>
         
