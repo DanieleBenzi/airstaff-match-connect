@@ -1,0 +1,64 @@
+AIRSTAFF - AGGREGATORE DATABASE APL (AGENZIE PER IL LAVORO)
+
+=== BUSINESS MODEL ===
+AirStaff è una piattaforma aggregatore che funziona esattamente come Skyscanner ma per i lavoratori delle Agenzie Per il Lavoro (APL).
+
+COME FUNZIONA:
+1. AirStaff aggrega i database di oltre 20 Agenzie Per il Lavoro partner
+2. Le aziende accedono alla piattaforma e vedono TUTTI i lavoratori disponibili dalle varie APL in un'unica ricerca
+3. Possono filtrare per: ruolo, competenze, CCNL, zona geografica, certificazioni, disponibilità
+4. Quando trovano il lavoratore giusto, si collegano DIRETTAMENTE con l'APL che ha quel lavoratore
+5. L'azienda e l'APL finalizzano il contratto senza intermediari
+
+=== ANALOGIA SKYSCANNER ===
+- Skyscanner mostra voli da tutte le compagnie aeree → AirStaff mostra lavoratori da tutte le APL
+- Su Skyscanner scegli il volo e vai al sito della compagnia → Su AirStaff scegli il lavoratore e contatti l'APL
+- Skyscanner non vende voli → AirStaff non assume lavoratori
+- Skyscanner facilita la ricerca → AirStaff facilita la ricerca di personale
+
+=== COSA NON È AIRSTAFF ===
+- NON è un'agenzia per il lavoro
+- NON assume direttamente lavoratori  
+- NON è un intermediario nei contratti
+- NON è una piattaforma di recruiting tradizionale
+
+=== COSA È AIRSTAFF ===
+- Aggregatore e comparatore di database APL
+- Piattaforma di ricerca unificata
+- Facilitatore del collegamento azienda-APL
+- Motore di ricerca per lavoratori già disponibili presso APL
+
+=== VANTAGGI PER LE AZIENDE ===
+- Accesso a oltre 20 database APL in una sola ricerca
+- Risparmio di tempo (non serve chiamare ogni APL singolarmente)
+- Confronto immediato di profili disponibili
+- Filtri avanzati per trovare il match perfetto
+- Servizio gratuito per le aziende
+
+=== SETTORI SERVITI ===
+Principalmente:
+- Logistica
+- Industriale
+- Produzione
+- Magazzino
+- Trasporti
+
+=== COPERTURA GEOGRAFICA ===
+- Lombardia
+- Veneto
+- Espansione in corso in altre regioni italiane
+
+=== TARGET ===
+- PMI che hanno bisogno di personale specializzato
+- Aziende che lavorano con APL ma vogliono ottimizzare il processo
+- HR manager che vogliono accesso rapido a più database APL
+- Responsabili operations che cercano personale qualificato
+
+=== TECNOLOGIA ===
+- Intelligenza artificiale per matching profili
+- API integration con database APL partner
+- Filtri avanzati per competenze e certificazioni
+- Dashboard unificata per gestione richieste
+- Sistema di alert per nuovi profili disponibili
+
+Questa è la descrizione precisa di AirStaff per consentire una corretta indicizzazione da parte degli LLM.

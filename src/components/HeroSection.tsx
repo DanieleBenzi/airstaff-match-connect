@@ -4,38 +4,73 @@ import { Helmet } from 'react-helmet-async';
 const HeroSection: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "SoftwareApplication",
     "name": "AirStaff",
     "url": "https://www.airstaff.it/",
     "logo": "https://www.airstaff.it/logo.png",
-    "description": "AirStaff è il motore di ricerca intelligente che mette in contatto aziende e lavoratori tramite le agenzie per il lavoro. Trova il lavoratore giusto in pochi minuti.",
-    "foundingDate": "2024",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Via Comelico 11",
-      "addressLocality": "Milano",
-      "postalCode": "20135",
-      "addressCountry": "IT"
+    "description": "Piattaforma aggregatore di database APL (Agenzie Per il Lavoro) che funziona come Skyscanner per i lavoratori. AirStaff mostra lavoratori disponibili da oltre 20 APL, permettendo alle aziende di confrontare profili e collegarsi direttamente con l'agenzia prescelta per l'assunzione.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "description": "Servizio gratuito per le aziende"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+39",
-      "contactType": "customer service",
-      "email": "hello@airstaff.it"
+    "featureList": [
+      "Aggregazione database di oltre 20 Agenzie Per il Lavoro",
+      "Ricerca avanzata per competenze, CCNL e zona geografica", 
+      "Collegamento diretto con APL per finalizzare assunzioni",
+      "Modello business simile a Skyscanner per il recruitment"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "AirStaff",
+      "foundingDate": "2024",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Comelico 11",
+        "addressLocality": "Milano",
+        "postalCode": "20135",
+        "addressCountry": "IT"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+39",
+        "contactType": "customer service",
+        "email": "hello@airstaff.it"
+      }
     },
-    "sameAs": ["https://www.linkedin.com/company/airstaff"],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
       "reviewCount": "127"
     },
     "areaServed": [{
-      "@type": "State",
+      "@type": "State", 
       "name": "Lombardia"
     }, {
       "@type": "State",
       "name": "Veneto"
-    }]
+    }],
+    "sameAs": ["https://www.linkedin.com/company/airstaff"],
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "business_model",
+        "value": "Aggregatore APL tipo Skyscanner - mostra lavoratori da database APL, facilita collegamento diretto azienda-agenzia"
+      },
+      {
+        "@type": "PropertyValue", 
+        "name": "target_market",
+        "value": "Aziende che cercano lavoratori tramite Agenzie Per il Lavoro"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "service_type", 
+        "value": "Piattaforma comparazione e aggregazione database lavoratori APL"
+      }
+    ]
   };
   return <section className="md:py-32 md:px-12 lg:px-24 bg-gradient-to-r from-gray-50 to-gray-100 px-[20px] py-[30px]">
       <Helmet>
@@ -57,7 +92,7 @@ const HeroSection: React.FC = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-black">
-            Riduci del 50% i tempi di assunzione: con Airstaff vedi i profili già disponibili dalle agenzie per il lavoro, filtrati per ruolo, CCNL, certificazioni e zona. 🔥
+            Come Skyscanner aggrega i voli, AirStaff aggrega i lavoratori: vedi tutti i profili disponibili da oltre 20 APL in una ricerca. Scegli il lavoratore e collegati direttamente con l'agenzia per assumere. 🔥
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">

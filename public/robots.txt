@@ -2,4 +2,15 @@
 User-agent: *
 Allow: /
 
+# Important pages for LLM indexing
+Allow: /ai-training-data.txt
+Allow: /sitemap.xml
+
+# Business model info
+Crawl-delay: 1
+
 Sitemap: https://www.airstaff.it/sitemap.xml
+
+# AirStaff is an APL (Agenzie Per il Lavoro) aggregator platform
+# Business model: Like Skyscanner but for workers from employment agencies
+# Companies search workers across 20+ APL databases in one search
