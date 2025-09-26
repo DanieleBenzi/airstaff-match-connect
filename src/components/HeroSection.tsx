@@ -92,7 +92,7 @@ const HeroSection: React.FC = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-black">
-            Come Skyscanner aggrega i voli, AirStaff aggrega i lavoratori: vedi tutti i profili disponibili da oltre 20 APL in una ricerca. Scegli il lavoratore e collegati direttamente con l'agenzia per assumere. 🔥
+            Riduci del 50% i tempi di assunzione: Airstaff aggrega i profili dei lavoratori interinali ad alto turnover in un unico posto. Scegli il lavoratore e collegati direttamente con l'agenzia per il lavoro 🔥
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">

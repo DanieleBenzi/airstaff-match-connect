@@ -27,8 +27,8 @@ const Benefits: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <BenefitCard icon={<Rabbit size={24} />} title="Veloce" description="Aggrega in tempo reale oltre 20 database APL. Come Skyscanner ti mostra tutto in una ricerca invece di dover chiamare ogni agenzia singolarmente." />
-          <BenefitCard icon={<Target size={24} />} title="Gratuito" description="Modello Skyscanner: AirStaff non chiede commissioni alle aziende. Ti colleghi direttamente con l'APL e tratti le condizioni." />
-          <BenefitCard icon={<Clock size={24} />} title="Risparmia tempo" description="Una ricerca, 20+ database APL consultati automaticamente. Niente più telefonate a ogni agenzia: vedi tutto, scegli e contatti solo l'APL che ti interessa." />
+          <BenefitCard icon={<Target size={24} />} title="Gratuito" description="AirStaff <strong>non</strong> chiede commissioni alle aziende. Ti colleghi direttamente con l'APL e tratti le condizioni." />
+          <BenefitCard icon={<Clock size={24} />} title="Risparmia tempo" description="In un'unica ricerca, consulti il database di 20 APL. Niente più telefonate a ogni agenzia." />
         </div>
       </div>
     </section>;
