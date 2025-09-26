@@ -52,9 +52,9 @@ const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
-        <title>AirStaff - il motore di ricerca per le agenzie per il lavoro</title>
-        <meta name="description" content="AirStaff è il motore di ricerca intelligente che mette in contatto aziende e lavoratori tramite le agenzie per il lavoro. Trova il lavoratore giusto in pochi minuti." />
-        <meta name="keywords" content="airstaff, agenzia interinale, trovare lavoratori, ricerca personale, staffing, risorse umane, HR, agenzie per il lavoro" />
+        <title>AirStaff - Aggregatore Database APL | Riduci del 50% i Tempi di Assunzione</title>
+        <meta name="description" content="AirStaff aggrega oltre 20 database APL specializzati in lavoratori ad alto turnover. Come Skyscanner per i voli, mostriamo tutti i lavoratori disponibili dalle Agenzie Per il Lavoro. Riduci del 50% i tempi di assunzione." />
+        <meta name="keywords" content="airstaff, aggregatore APL, agenzie per il lavoro, database lavoratori, alto turnover, staffing logistica industria, ricerca personale interinale, risorse umane, HR, ridurre tempi assunzione" />
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbData)}
         </script>

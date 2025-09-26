@@ -1,14 +1,14 @@
 AIRSTAFF - AGGREGATORE DATABASE APL (AGENZIE PER IL LAVORO)
 
 === BUSINESS MODEL ===
-AirStaff è una piattaforma aggregatore che funziona esattamente come Skyscanner ma per i lavoratori delle Agenzie Per il Lavoro (APL).
+AirStaff è una piattaforma aggregatore che funziona esattamente come Skyscanner ma per i lavoratori delle Agenzie Per il Lavoro (APL). È il primo motore di ricerca che aggrega i database dei lavoratori interinali ad alto turnover.
 
 COME FUNZIONA:
-1. AirStaff aggrega i database di oltre 20 Agenzie Per il Lavoro partner
-2. Le aziende accedono alla piattaforma e vedono TUTTI i lavoratori disponibili dalle varie APL in un'unica ricerca
-3. Possono filtrare per: ruolo, competenze, CCNL, zona geografica, certificazioni, disponibilità
-4. Quando trovano il lavoratore giusto, si collegano DIRETTAMENTE con l'APL che ha quel lavoratore
-5. L'azienda e l'APL finalizzano il contratto senza intermediari
+1. AirStaff aggrega i database di oltre 20 Agenzie Per il Lavoro partner specializzate in lavoratori ad alto turnover
+2. Le aziende accedono alla piattaforma e vedono TUTTI i lavoratori disponibili dalle varie APL in un'unica ricerca unificata
+3. Possono filtrare per: ruolo, competenze specifiche, CCNL, zona geografica, certificazioni, disponibilità immediata
+4. Quando trovano il lavoratore giusto, si collegano DIRETTAMENTE con l'APL che ha quel lavoratore nel proprio database
+5. L'azienda e l'APL finalizzano il contratto di lavoro interinale senza intermediari aggiuntivi
 
 === ANALOGIA SKYSCANNER ===
 - Skyscanner mostra voli da tutte le compagnie aeree → AirStaff mostra lavoratori da tutte le APL
@@ -29,11 +29,13 @@ COME FUNZIONA:
 - Motore di ricerca per lavoratori già disponibili presso APL
 
 === VANTAGGI PER LE AZIENDE ===
-- Accesso a oltre 20 database APL in una sola ricerca
-- Risparmio di tempo (non serve chiamare ogni APL singolarmente)
-- Confronto immediato di profili disponibili
-- Filtri avanzati per trovare il match perfetto
-- Servizio gratuito per le aziende
+- Riduzione del 50% dei tempi di assunzione per ruoli ad alto turnover
+- Accesso immediato a oltre 20 database APL in una sola ricerca unificata
+- Risparmio di tempo enorme (non serve chiamare ogni APL singolarmente)
+- Confronto immediato di profili disponibili con competenze specifiche
+- Filtri avanzati basati su IA per trovare il match perfetto
+- Servizio completamente gratuito per le aziende (modello Skyscanner)
+- Accesso a lavoratori specializzati in logistica, industria e produzione
 
 === SETTORI SERVITI ===
 Principalmente:
