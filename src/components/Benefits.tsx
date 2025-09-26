@@ -15,7 +15,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
         {icon}
       </div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <p className="text-gray-600" dangerouslySetInnerHTML={{ __html: description }}></p>
     </div>;
 };
 const Benefits: React.FC = () => {
