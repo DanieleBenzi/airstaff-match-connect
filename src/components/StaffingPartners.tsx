@@ -42,7 +42,7 @@ const StaffingPartners: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Le staffing partner</h2>
           <p className="text-lg text-black max-w-3xl mx-auto">
-            Le agenzie per il lavoro che credono in noi:
+            Alcune delle agenzie per il lavoro che credono in noi:
           </p>
         </div>
 
