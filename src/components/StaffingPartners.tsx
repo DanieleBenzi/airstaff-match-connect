@@ -27,6 +27,15 @@ const StaffingPartners: React.FC = () => {
   }, {
     name: 'Only Job',
     logo: '/lovable-uploads/e629ccca-d93a-461e-9a59-71836fc3189d.png'
+  }, {
+    name: 'Just On Business',
+    logo: '/lovable-uploads/JustOnBusiness.png'
+  }, {
+    name: 'In Opera',
+    logo: '/lovable-uploads/inopera.png'
+  }, {
+    name: 'JPT Group',
+    logo: '/lovable-uploads/JPTGroup.png'
   }];
   return <section className="px-6 md:px-12 lg:px-24 py-[30px]">
       <div className="container mx-auto">
