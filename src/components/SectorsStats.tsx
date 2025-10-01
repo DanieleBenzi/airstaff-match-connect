@@ -1,30 +1,30 @@
 import React from 'react';
-import { Truck, Factory, Briefcase, Heart } from 'lucide-react';
+import { Truck, Factory, Briefcase, UtensilsCrossed } from 'lucide-react';
 
 const SectorsStats: React.FC = () => {
   const sectors = [
     {
-      name: 'Logistica',
+      name: 'Lavoratori nella logistica',
       count: 2500,
       icon: Truck,
       gradient: 'from-blue-500 to-airstaff-blue',
     },
     {
-      name: 'Industria',
+      name: 'Lavoratori nell\'industria',
       count: 2200,
       icon: Factory,
       gradient: 'from-airstaff-blue to-purple-500',
     },
     {
-      name: 'Servizi',
+      name: 'Lavoratori nei servizi',
       count: 1000,
       icon: Briefcase,
       gradient: 'from-purple-500 to-airstaff-pink',
     },
     {
-      name: 'Ospedaliero',
-      count: 600,
-      icon: Heart,
+      name: 'Lavoratori nell\'Horeca',
+      count: 900,
+      icon: UtensilsCrossed,
       gradient: 'from-airstaff-pink to-red-500',
     },
   ];
@@ -71,11 +71,6 @@ const SectorsStats: React.FC = () => {
           })}
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-gray-600 text-sm">
-            Database in continua crescita con nuovi profili ogni giorno
-          </p>
-        </div>
       </div>
     </section>
   );
