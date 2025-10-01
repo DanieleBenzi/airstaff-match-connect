@@ -9,6 +9,7 @@ import Benefits from '@/components/Benefits';
 import Footer from '@/components/Footer';
 import StaffingPartners from '@/components/StaffingPartners';
 import BookDemoSection from '@/components/BookDemoSection';
+import SectorsStats from '@/components/SectorsStats';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
@@ -65,6 +66,7 @@ const Index: React.FC = () => {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
+        <SectorsStats />
         <HowItWorks />
         <MainFeatures />
         <SalesCallSection />
