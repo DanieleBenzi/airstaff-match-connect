@@ -12,11 +12,17 @@ const Navbar: React.FC = () => {
           <Logo />
         </Link>
 
-        {/* Desktop menu - only CTA */}
-        <div className="hidden md:flex items-center">
+        {/* Desktop menu - navigation links and CTA */}
+        <div className="hidden md:flex items-center gap-8">
+          <Link to="/apri-posizione" className="text-gray-700 hover:text-airstaff-pink font-medium transition-colors">
+            Apri una posizione
+          </Link>
+          <Link to="/faq" className="text-gray-700 hover:text-airstaff-pink font-medium transition-colors">
+            Domande frequenti
+          </Link>
           <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Prova AirStaff
+              Accedi
             </GradientButton>
           </a>
         </div>
@@ -25,7 +31,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden flex justify-end">
           <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
-              Prova AirStaff
+              Accedi
             </GradientButton>
           </a>
         </div>

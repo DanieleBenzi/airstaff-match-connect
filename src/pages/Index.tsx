@@ -4,8 +4,8 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import HowItWorks from '@/components/HowItWorks';
 import MainFeatures from '@/components/MainFeatures';
+import SalesCallSection from '@/components/SalesCallSection';
 import Benefits from '@/components/Benefits';
-import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import StaffingPartners from '@/components/StaffingPartners';
 import BookDemoSection from '@/components/BookDemoSection';
@@ -67,6 +67,7 @@ const Index: React.FC = () => {
         <HeroSection />
         <HowItWorks />
         <MainFeatures />
+        <SalesCallSection />
         <Benefits />
         <BookDemoSection />
         <StaffingPartners />
@@ -87,7 +88,6 @@ const Index: React.FC = () => {
             </Link>
           </p>
         </div>
-        <CTASection />
       </main>
       <Footer />
     </div>
