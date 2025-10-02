@@ -84,7 +84,7 @@ const WorkerSearchBar: React.FC = () => {
   };
   return <div>
       {/* Search Bar */}
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 mb-8">
+      <div className="container mx-auto bg-white rounded-2xl shadow-lg p-6 mb-8">
           <div className="grid md:grid-cols-[1fr,1fr,auto] gap-4 items-end">
             <div>
               
@@ -105,7 +105,7 @@ const WorkerSearchBar: React.FC = () => {
         </div>
 
         {/* Results */}
-        {hasSearched && <div className="max-w-4xl mx-auto">
+        {hasSearched && <div className="container mx-auto">
             {isLoading ? <div className="text-center py-8">
                 <p className="text-gray-600">Caricamento...</p>
               </div> : results.length > 0 ? <>
