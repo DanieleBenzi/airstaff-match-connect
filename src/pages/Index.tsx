@@ -10,6 +10,7 @@ import Footer from '@/components/Footer';
 import StaffingPartners from '@/components/StaffingPartners';
 import BookDemoSection from '@/components/BookDemoSection';
 import SectorsStats from '@/components/SectorsStats';
+import WorkerSearchBar from '@/components/WorkerSearchBar';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
@@ -67,6 +68,7 @@ const Index: React.FC = () => {
       <main className="flex-grow">
         <HeroSection />
         <SectorsStats />
+        <WorkerSearchBar />
         <HowItWorks />
         <MainFeatures />
         <SalesCallSection />
