@@ -93,7 +93,7 @@ const HeroSection: React.FC = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-black">
-            Riduci del 50% i tempi di assunzione: AirStaff aggrega i profili dei lavoratori interinali ad alto turnover in un unico posto. Scegli il lavoratore e collegati direttamente con l'agenzia per il lavoro 🔥
+            Riduci del 50% i tempi di assunzione: "AirStaff è il motore di ricerca che collega la tua azienda a 20+ Agenzie per il Lavoro specializzate: come uno Skyscanner dei candidati, ti mostriamo tutti i profili disponibili in un unico posto🔥"
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">

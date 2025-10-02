@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rabbit, Target, Clock } from 'lucide-react';
+import { Clock, Users, Sparkles, Banknote } from 'lucide-react';
 interface BenefitCardProps {
   icon: React.ReactNode;
   title: string;
@@ -22,13 +22,14 @@ const Benefits: React.FC = () => {
   return <section id="vantaggi" className="px-6 md:px-12 lg:px-24 py-[30px]">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Vantaggi per la tua azienda:</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Perché AirStaff</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <BenefitCard icon={<Rabbit size={24} />} title="Veloce" description="AirStaff aggrega in tempo reale oltre 20 database APL. Come Skyscanner, AirStaff ti mostra tutto in una singola ricerca così che tu non debba chiamare ogni agenzia singolarmente." />
-          <BenefitCard icon={<Target size={24} />} title="Gratuito" description="AirStaff <strong>non</strong> chiede commissioni alle aziende. Ti mette in contatto direttamente con l'APL e sarai tu a trattare le condizioni." />
-          <BenefitCard icon={<Clock size={24} />} title="Risparmia tempo" description="Non ci sarà più bisogno di dover chiamare ogni singola APL. Noi aggreghiamo i lavoratori per te, tu scegli quello più idoneo." />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <BenefitCard icon={<Clock size={24} />} title="Risparmio di tempo" description="Riduci del 50% il time-to-hire, coprendo posizioni vacanti più velocemente" />
+          <BenefitCard icon={<Users size={24} />} title="Più lavoratori qualificati" description="Attingi ai database unificati di oltre 20 agenzie specializzate" />
+          <BenefitCard icon={<Sparkles size={24} />} title="Semplicità" description="Una sola piattaforma, un solo contratto, niente più dozzine di telefonate o email a vuoto" />
+          <BenefitCard icon={<Banknote size={24} />} title="Zero costi" description="Il servizio per le aziende è gratuito, AirStaff è remunerata dalle agenzie: tu ottieni il personale senza spese extra" />
         </div>
       </div>
     </section>;
