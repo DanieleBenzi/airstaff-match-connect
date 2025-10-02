@@ -96,10 +96,8 @@ const WorkerSearchBar: React.FC = () => {
               <Input id="dove-search" type="text" placeholder="Dove lo cerchi (es. Milano, Venezia)" value={dove} onChange={e => setDove(e.target.value)} className="w-full" aria-label="Cerca per località" />
             </div>
             
-            <GradientButton onClick={handleSearch} className="w-full md:w-auto flex items-center gap-2">
-              <Search className="w-5 h-5" />
-              <span>Cerca Lavoratori</span>
-              <ArrowRight className="w-5 h-5" />
+            <GradientButton onClick={handleSearch} className="w-full md:w-auto">
+              Cerca Lavoratori
             </GradientButton>
           </div>
         </div>
