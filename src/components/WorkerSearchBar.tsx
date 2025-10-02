@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search } from 'lucide-react';
+import { Search, ArrowRight } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import GradientButton from '@/components/GradientButton';
 
@@ -109,14 +109,9 @@ const WorkerSearchBar: React.FC = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-          Trova i Lavoratori Giusti per Te
-        </h2>
-        
-        {/* Search Bar */}
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 mb-8">
+    <div>
+      {/* Search Bar */}
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 mb-8">
           <div className="grid md:grid-cols-[1fr,1fr,auto] gap-4 items-end">
             <div>
               <label htmlFor="cosa-search" className="block text-sm font-medium text-gray-700 mb-2">
@@ -150,11 +145,11 @@ const WorkerSearchBar: React.FC = () => {
             
             <GradientButton
               onClick={handleSearch}
-              className="w-full md:w-auto"
-              icon={true}
+              className="w-full md:w-auto flex items-center gap-2"
             >
-              <Search className="w-5 h-5 mr-2" />
-              Cerca Lavoratori
+              <Search className="w-5 h-5" />
+              <span>Cerca Lavoratori</span>
+              <ArrowRight className="w-5 h-5" />
             </GradientButton>
           </div>
         </div>
@@ -229,8 +224,7 @@ const WorkerSearchBar: React.FC = () => {
             )}
           </div>
         )}
-      </div>
-    </section>
+    </div>
   );
 };
 

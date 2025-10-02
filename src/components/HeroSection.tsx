@@ -1,6 +1,7 @@
 import React from 'react';
 import GradientButton from './GradientButton';
 import { Helmet } from 'react-helmet-async';
+import WorkerSearchBar from './WorkerSearchBar';
 const HeroSection: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
@@ -105,6 +106,11 @@ const HeroSection: React.FC = () => {
         <div className="hidden md:flex justify-center">
           <img src="/lovable-uploads/8b394d39-6908-44ea-98cd-58f4e39f5543.png" alt="Interfaccia della piattaforma AirStaff che mostra come cercare lavoratori nelle agenzie per il lavoro" className="w-[110%] h-auto" loading="lazy" />
         </div>
+      </div>
+      
+      {/* Worker Search Bar */}
+      <div className="container mx-auto mt-12">
+        <WorkerSearchBar />
       </div>
     </section>;
 };
