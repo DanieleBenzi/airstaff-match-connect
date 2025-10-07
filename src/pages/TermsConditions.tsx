@@ -169,21 +169,7 @@ const TermsConditions: React.FC = () => {
             
             <h2 className="text-2xl font-bold mt-8 mb-4">19. Comunicazioni</h2>
             <p>
-              Le comunicazioni legali possono essere inviate via email all'indirizzo associato all'account o tramite avvisi in Piattaforma. Per AirStaff: info@airstaff.com (o diverso recapito indicato sul sito).
-            </p>
-            
-            <h2 className="text-2xl font-bold mt-8 mb-4">20. Disposizioni Finali</h2>
-            <p className="mb-3">
-              20.1 Invalidità parziale: l'eventuale nullità di una clausola non pregiudica la validità delle altre.
-            </p>
-            <p className="mb-3">
-              20.2 Cessione: l'utente non può cedere il contratto senza consenso scritto di AirStaff; AirStaff può cederlo a società del gruppo o a terzi nell'ambito di operazioni straordinarie.
-            </p>
-            <p className="mb-3">
-              20.3 Forza maggiore: nessuna responsabilità per ritardi/inadempimenti dovuti a eventi fuori controllo ragionevole (es. guasti, attacchi informatici, blackout, provvedimenti autorità).
-            </p>
-            <p>
-              20.4 Intero accordo: i Termini costituiscono l'intero accordo sull'uso dei Servizi, fatti salvi gli accordi specifici di cui all'art. 1.3.
+              Le comunicazioni legali possono essere inviate via email all'indirizzo associato all'account o tramite avvisi in Piattaforma. Per AirStaff: hello@airstaff.it (o diverso recapito indicato sul sito).
             </p>
           </div>
         </div>
