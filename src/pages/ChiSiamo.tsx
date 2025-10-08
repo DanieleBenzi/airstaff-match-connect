@@ -5,12 +5,65 @@ import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
 
 const ChiSiamo: React.FC = () => {
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.airstaff.it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Chi Siamo",
+        "item": "https://www.airstaff.it/chi-siamo"
+      }
+    ]
+  };
+
+  const organizationData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AirStaff",
+    "url": "https://www.airstaff.it",
+    "logo": "https://www.airstaff.it/lovable-uploads/ccd37507-3dc5-461b-98d7-9a0aafb56938.png",
+    "description": "AirStaff aggrega i database di oltre 20 Agenzie Per il Lavoro, permettendo alle aziende di trovare lavoratori qualificati e ridurre del 50% i tempi di assunzione.",
+    "foundingDate": "2024",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Comelico 11",
+      "addressLocality": "Milano",
+      "postalCode": "20135",
+      "addressCountry": "IT"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@airstaff.it",
+      "contactType": "customer service",
+      "areaServed": "IT",
+      "availableLanguage": "Italian"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/airstaff"
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
-        <title>Chi Siamo | AirStaff - La nostra storia e missione</title>
-        <meta name="description" content="AirStaff è nata per connettere le aziende ai migliori lavoratori, rendendo il processo di ricerca e selezione più semplice ed efficiente per tutti." />
+        <title>Chi Siamo | AirStaff - Aggregatore APL per Ricerca Lavoratori</title>
+        <meta name="description" content="AirStaff è l'aggregatore di database APL che connette le aziende a oltre 20 Agenzie Per il Lavoro. Come Skyscanner per i lavoratori, riduciamo del 50% i tempi di assunzione." />
+        <meta name="keywords" content="chi siamo AirStaff, aggregatore APL, agenzie per il lavoro, storia AirStaff, missione, valori" />
         <link rel="canonical" href="https://www.airstaff.it/chi-siamo" />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(organizationData)}
+        </script>
       </Helmet>
       
       <Navbar />

@@ -2,12 +2,61 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
+
 const ApriPosizione: React.FC = () => {
-  return <div className="min-h-screen flex flex-col bg-white">
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.airstaff.it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Apri una Posizione",
+        "item": "https://www.airstaff.it/apri-posizione"
+      }
+    ]
+  };
+
+  const serviceData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Servizio di Ricerca Lavoratori",
+    "provider": {
+      "@type": "Organization",
+      "name": "AirStaff",
+      "url": "https://www.airstaff.it"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Italia"
+    },
+    "description": "Servizio gratuito per trovare lavoratori tramite network di Agenzie Per il Lavoro. Contatto garantito entro 72 ore.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-white">
       <Helmet>
-        <title>Apri una Posizione - AirStaff</title>
-        <meta name="description" content="Non trovi un lavoratore? Te lo troviamo noi, gratis. Apri una posizione e le nostre agenze partner ti contatteranno entro 72h." />
-        <meta name="keywords" content="apri posizione, ricerca lavoratori, agenzie lavoro, airstaff, staffing gratuito" />
+        <title>Apri una Posizione Lavorativa Gratis | AirStaff Network APL</title>
+        <meta name="description" content="Non trovi il lavoratore giusto? Apri una posizione gratis su AirStaff. Il nostro network di 20+ Agenzie Per il Lavoro ti contatterà entro 72h con candidati qualificati." />
+        <meta name="keywords" content="apri posizione lavorativa, ricerca lavoratori gratis, agenzie lavoro, airstaff, staffing gratuito, trova personale" />
+        <link rel="canonical" href="https://www.airstaff.it/apri-posizione" />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(serviceData)}
+        </script>
       </Helmet>
       
       <Navbar />
@@ -48,6 +97,8 @@ const ApriPosizione: React.FC = () => {
       </main>
       
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default ApriPosizione;

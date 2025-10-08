@@ -4,10 +4,76 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Search, UserCheck, MessageCircle, Handshake } from 'lucide-react';
 import GradientButton from '@/components/GradientButton';
+import { Helmet } from 'react-helmet-async';
 
 const ComeFunziona: React.FC = () => {
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.airstaff.it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Come Funziona",
+        "item": "https://www.airstaff.it/come-funziona"
+      }
+    ]
+  };
+
+  const howToData = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Come trovare lavoratori con AirStaff",
+    "description": "Guida passo-passo per utilizzare AirStaff e trovare lavoratori qualificati tramite Agenzie Per il Lavoro",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Registrazione",
+        "text": "Registrati gratuitamente alla piattaforma per accedere a tutti i lavoratori disponibili. Basta inserire i dati della tua azienda e sei pronto per iniziare!"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Cerca i lavoratori",
+        "text": "Usa il nostro motore di ricerca intelligente: inserisci la mansione che stai cercando, quando ne hai bisogno, dove dovrà lavorare e quanto vuoi offrire. L'AI ti mostrerà i profili più adatti alle tue esigenze."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Invia richiesta di contatto",
+        "text": "Hai trovato il lavoratore perfetto? Clicca sul bottone 'Contatta l'agenzia' e invia la tua richiesta. L'agenzia riceverà subito la notifica e valuterà la tua richiesta."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Chiudi il contratto",
+        "text": "L'agenzia ti contatterà per definire tutti i dettagli e far iniziare il lavoratore. Nessuna complicazione burocratica: l'agenzia si occupa di tutto!"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <Helmet>
+        <title>Come Funziona AirStaff | Guida Completa per Trovare Lavoratori APL</title>
+        <meta name="description" content="Scopri come funziona AirStaff passo dopo passo: registrati, cerca lavoratori nei database di 20+ APL, invia richieste e assumi in 72h. Guida completa e gratuita." />
+        <meta name="keywords" content="come funziona AirStaff, guida AirStaff, trovare lavoratori APL, ricerca personale, agenzie per il lavoro" />
+        <link rel="canonical" href="https://www.airstaff.it/come-funziona" />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(howToData)}
+        </script>
+      </Helmet>
+      
       <Navbar />
       
       <main className="flex-grow">

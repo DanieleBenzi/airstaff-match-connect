@@ -96,12 +96,35 @@ const FAQ: React.FC = () => {
     }))
   };
 
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.airstaff.it/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "FAQ",
+        "item": "https://www.airstaff.it/faq"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Domande Frequenti - AirStaff | FAQ su come funziona la piattaforma</title>
-        <meta name="description" content="Trova le risposte alle domande più frequenti su AirStaff. Scopri come funziona la nostra piattaforma per la ricerca di lavoratori tramite agenzie per il lavoro." />
-        <meta name="keywords" content="FAQ AirStaff, domande frequenti, come funziona AirStaff, agenzie per il lavoro, ricerca lavoratori" />
+        <title>FAQ AirStaff | Domande Frequenti su Aggregatore Database APL</title>
+        <meta name="description" content="Risposte alle domande frequenti su AirStaff: come funziona l'aggregatore APL, costi, tempi di risposta, aree coperte e come trovare lavoratori qualificati in 72h." />
+        <meta name="keywords" content="FAQ AirStaff, domande frequenti APL, come funziona aggregatore lavoratori, costi AirStaff, agenzie per il lavoro" />
+        <link rel="canonical" href="https://www.airstaff.it/faq" />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbData)}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify(faqStructuredData)}
         </script>
