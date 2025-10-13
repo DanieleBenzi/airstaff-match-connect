@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
           <Link to="/faq" className="text-gray-700 hover:text-airstaff-pink font-medium transition-colors">
             Domande frequenti
           </Link>
-          <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="https://app.airstaff.it/guest/search-talents" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
               Accedi
             </GradientButton>
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile - CTA only */}
         <div className="md:hidden">
-          <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="https://app.airstaff.it/guest/search-talents" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
               Accedi
             </GradientButton>

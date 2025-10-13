@@ -11,7 +11,7 @@ const CTASection: React.FC = () => {
             <p className="text-white">
               Prova AirStaff gratis e inizia a ricevere profili compatibili in poche ore.
             </p>
-            <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer">
+            <a href="https://app.airstaff.it/guest/search-talents" target="_blank" rel="noopener noreferrer">
               <GradientButton icon className="mt-4">
                 Inizia la ricerca
               </GradientButton>

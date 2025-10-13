@@ -80,7 +80,7 @@ const WorkerSearchBar: React.FC = () => {
     }
   };
   const handleCardClick = () => {
-    window.open('https://app.airstaff.it/', '_self');
+    window.open('https://app.airstaff.it/guest/search-talents', '_self');
   };
   return <div>
       {/* Search Bar */}
@@ -135,7 +135,7 @@ const WorkerSearchBar: React.FC = () => {
                 </div>
                 
                 <div className="text-center">
-                  <a href="https://app.airstaff.it/" target="_self" className="text-airstaff-pink hover:text-airstaff-blue font-semibold text-lg transition-colors">
+                  <a href="https://app.airstaff.it/guest/search-talents" target="_self" className="text-airstaff-pink hover:text-airstaff-blue font-semibold text-lg transition-colors">
                     Accedi per vedere più risultati...
                   </a>
                 </div>

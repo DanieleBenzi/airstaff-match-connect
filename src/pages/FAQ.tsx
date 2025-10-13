@@ -74,7 +74,7 @@ const FAQ: React.FC = () => {
     {
       id: 'faq-10',
       question: 'Come posso registrarmi come azienda su AirStaff?',
-      answer: 'Per registrarti come azienda, visita questo link: [https://app.airstaff.it/auth/register](https://app.airstaff.it/auth/register), seleziona "mi sto registrando come azienda" e compila il modulo di registrazione.'
+      answer: 'Per registrarti come azienda, visita questo link: [https://app.airstaff.it/guest/search-talents](https://app.airstaff.it/guest/search-talents), seleziona "mi sto registrando come azienda" e compila il modulo di registrazione.'
     }
   ];
 

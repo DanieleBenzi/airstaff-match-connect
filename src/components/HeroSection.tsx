@@ -96,7 +96,7 @@ const HeroSection: React.FC = () => {
             Riduci del 50% i tempi di assunzione: AirStaff è il motore di ricerca che collega la tua azienda a 20+ Agenzie per il Lavoro specializzate: come uno Skyscanner dei candidati, ti mostriamo tutti i profili disponibili in un unico posto🔥
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://app.airstaff.it/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <a href="https://app.airstaff.it/guest/search-talents" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <GradientButton icon className="w-full sm:w-auto px-8 py-3 text-lg">
                 Prova AirStaff
               </GradientButton>
