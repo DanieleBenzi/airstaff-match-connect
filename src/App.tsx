@@ -11,6 +11,7 @@ import TermsConditions from "./pages/TermsConditions";
 import CookiePolicy from "./pages/CookiePolicy";
 import FAQ from "./pages/FAQ";
 import ApriPosizione from "./pages/ApriPosizione";
+import Healthcare from "./pages/Healthcare";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/cookie-policy" element={<CookiePolicy />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/apri-posizione" element={<ApriPosizione />} />
+            <Route path="/healthcare" element={<Healthcare />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

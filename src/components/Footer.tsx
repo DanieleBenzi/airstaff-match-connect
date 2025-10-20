@@ -30,6 +30,9 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/apri-posizione" className="text-white hover:text-white transition-colors">Apri una posizione - GRATIS</Link>
               </li>
+              <li>
+                <Link to="/healthcare" className="text-white hover:text-white transition-colors">AirStaff - Healthcare</Link>
+              </li>
             </ul>
           </div>
 
