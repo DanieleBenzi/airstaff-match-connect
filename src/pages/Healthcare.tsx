@@ -55,11 +55,11 @@ const Healthcare: React.FC = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Trova il <span className="text-airstaff-pink">Badante</span> o <span className="text-airstaff-blue">OSS</span> Perfetto per la Tua Famiglia
+              Assistenza Domiciliare di Qualità per <span className="text-airstaff-pink">Prendersi Cura</span> dei Tuoi <span className="text-airstaff-blue">Cari</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8">
-              Assistenza domiciliare professionale per anziani e persone con disabilità. 
-              Professionisti qualificati, verificati e disponibili in poche ore.
+              Sappiamo quanto sia importante garantire il benessere delle persone che ami. 
+              Ti aiutiamo a trovare professionisti qualificati e affidabili per l'assistenza domiciliare.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="https://app.airstaff.it/guest/search-talents" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
@@ -242,10 +242,10 @@ const Healthcare: React.FC = () => {
       <section className="bg-gradient-cta px-6 md:px-12 lg:px-24 py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Inizia Oggi la Ricerca del Professionista Ideale
+            Siamo Qui per Aiutarti
           </h2>
           <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-            Non perdere tempo prezioso. Trova il badante o l'OSS giusto per la tua famiglia in poche ore.
+            Ogni famiglia merita il meglio. Ti supportiamo nella ricerca del professionista più adatto alle tue esigenze.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://app.airstaff.it/guest/search-talents" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
