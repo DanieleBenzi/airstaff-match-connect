@@ -3,9 +3,24 @@ import { Helmet } from 'react-helmet-async';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import GradientButton from '@/components/GradientButton';
-import { Heart, Shield, Clock, Users, CheckCircle, Phone } from 'lucide-react';
+import { Heart, Shield, Clock, Users, CheckCircle, Mail } from 'lucide-react';
 
 const Healthcare: React.FC = () => {
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd0ESXTIa5z3BC1gI_2B3IxyIvwwMoSfrABmmAj4YT_2Fk8rZ.js';
+    script.async = true;
+    const container = document.getElementById('smcx-sdk');
+    if (container && !container.hasChildNodes()) {
+      document.body.appendChild(script);
+    }
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -69,8 +84,8 @@ const Healthcare: React.FC = () => {
               </a>
               <a href="mailto:hello@airstaff.it" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto bg-white text-airstaff-pink border-2 border-airstaff-pink px-8 py-3 rounded-full font-medium text-lg transition-all hover:bg-airstaff-pink hover:text-white flex items-center justify-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Contattaci
+                  <Mail className="w-5 h-5" />
+                  Scrivici
                 </button>
               </a>
             </div>
@@ -250,15 +265,8 @@ const Healthcare: React.FC = () => {
             </p>
           </div>
           
-          <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden">
-            <iframe 
-              src="https://it.surveymonkey.com/r/D58SBND"
-              width="100%"
-              height="600"
-              frameBorder="0"
-              className="w-full"
-              title="Form di Richiesta Assistenza Domiciliare"
-            />
+          <div className="bg-white rounded-lg shadow-lg border border-gray-200 overflow-hidden p-8">
+            <div id="smcx-sdk"></div>
           </div>
         </div>
       </section>
@@ -280,8 +288,8 @@ const Healthcare: React.FC = () => {
             </a>
             <a href="mailto:hello@airstaff.it" className="w-full sm:w-auto">
               <button className="w-full sm:w-auto bg-transparent text-white border-2 border-white px-8 py-3 rounded-full font-medium text-lg transition-all hover:bg-white hover:text-airstaff-pink flex items-center justify-center gap-2">
-                <Phone className="w-5 h-5" />
-                Parlaci delle Tue Esigenze
+                <Mail className="w-5 h-5" />
+                Scrivici il Tuo Bisogno
               </button>
             </a>
           </div>
