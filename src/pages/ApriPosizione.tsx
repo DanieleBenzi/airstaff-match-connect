@@ -72,10 +72,10 @@ const ApriPosizione: React.FC = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
-              Apri una posizione utilizzando il form qui sotto e noi contatteremo le Agenzie del lavoro al posto tuo. 
-              Senza bisogno di creare nessun account.
+              Non riesci a trovare il lavoratore giusto? Con AirStaff puoi aprire una posizione (utilizzando il form qui sotto) e saremo noi a cercare gratuitamente per te il lavoratore. 
+              Come lo faremo? contatteremo le Agenzie del Lavoro presenti nel nostro circuito e condivideremo la tua richiesta. A te non resta che attendere. Non è richiesta nemmeno l'apertura di un account, ci basta una tua email!
               <br /><br />
-              Nel giro di 72h, le nostre APL partner ti contatteranno e ti proporranno dei lavoratori in linea con la tua ricerca!
+              Nel giro di 72h, torneremo da te con dei lavoratori in linea con le tue necessità
             </p>
             
             {/* SurveyMonkey Form */}
