@@ -15,7 +15,7 @@ const Tender: React.FC = () => {
     {
       number: "02",
       title: "Pubblichiamo il Tender",
-      description: "Il tuo tender viene pubblicato automaticamente alle staffing agencies più qualificate del nostro network in base ai tuoi criteri.",
+      description: "Il tuo tender viene pubblicato automaticamente alle Agenzie per il Lavoro più qualificate del nostro network in base ai tuoi criteri.",
     },
     {
       number: "03",
@@ -25,7 +25,7 @@ const Tender: React.FC = () => {
     {
       number: "04",
       title: "Scegli il Partner Migliore",
-      description: "Confronta le proposte ricevute, analizza le performance storiche delle staffing agencies e seleziona il partner ideale per te.",
+      description: "Confronta le proposte ricevute, analizza le performance storiche delle Agenzie per il Lavoro e seleziona il partner ideale per te.",
     },
   ];
 
@@ -33,7 +33,7 @@ const Tender: React.FC = () => {
     {
       icon: <Clock className="w-12 h-12 text-primary" />,
       title: "Risparmia Tempo",
-      description: "Ricevi multiple offerte da diverse staffing agencies senza doverle contattare una per una.",
+      description: "Ricevi multiple offerte da diverse Agenzie per il Lavoro senza doverle contattare una per una.",
     },
     {
       icon: <TrendingUp className="w-12 h-12 text-primary" />,
@@ -43,28 +43,28 @@ const Tender: React.FC = () => {
     {
       icon: <Users className="w-12 h-12 text-primary" />,
       title: "Accesso a Più Talenti",
-      description: "Raggiungi un pool di candidati più ampio attraverso le diverse staffing agencies del network.",
+      description: "Raggiungi un pool di candidati più ampio attraverso le diverse Agenzie per il Lavoro del network.",
     },
     {
       icon: <Shield className="w-12 h-12 text-primary" />,
       title: "Qualità Garantita",
-      description: "Lavora solo con staffing agencies pre-qualificate e verificate da AirStaff.",
+      description: "Lavora solo con Agenzie per il Lavoro pre-qualificate e verificate da AirStaff.",
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>AirStaff - Tender | Trova le Migliori Staffing Agencies</title>
+        <title>AirStaff - Tender | Trova le Migliori Agenzie per il Lavoro</title>
         <meta 
           name="description" 
-          content="Pubblica tender per trovare le migliori staffing agencies. Ricevi proposte competitive, confronta offerte e scegli il partner ideale per la tua azienda." 
+          content="Pubblica tender per trovare le migliori Agenzie per il Lavoro. Ricevi proposte competitive, confronta offerte e scegli il partner ideale per la tua azienda." 
         />
-        <meta name="keywords" content="tender staffing, gara appalto lavoro temporaneo, ricerca agenzie del lavoro, staffing agencies, appalto personale" />
+        <meta name="keywords" content="tender agenzie lavoro, gara appalto lavoro temporaneo, ricerca agenzie del lavoro, appalto personale" />
         <link rel="canonical" href="https://www.airstaff.it/tender" />
         
-        <meta property="og:title" content="AirStaff - Tender per Staffing Agencies" />
-        <meta property="og:description" content="Pubblica tender e trova le migliori staffing agencies per la tua azienda" />
+        <meta property="og:title" content="AirStaff - Tender per Agenzie per il Lavoro" />
+        <meta property="og:description" content="Pubblica tender e trova le migliori Agenzie per il Lavoro per la tua azienda" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.airstaff.it/tender" />
         
@@ -73,7 +73,7 @@ const Tender: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "AirStaff Tender",
-            "description": "Piattaforma per pubblicare tender e trovare le migliori staffing agencies",
+            "description": "Piattaforma per pubblicare tender e trovare le migliori Agenzie per il Lavoro",
             "provider": {
               "@type": "Organization",
               "name": "AirStaff"
@@ -190,7 +190,7 @@ const Tender: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Master Vendor</h3>
                   <p className="text-muted-foreground">
-                    Seleziona un partner principale per gestire l'intero processo di staffing.
+                    Seleziona un partner principale per gestire l'intero processo di ricerca personale.
                   </p>
                 </div>
               </div>
@@ -199,7 +199,7 @@ const Tender: React.FC = () => {
                 <div>
                   <h3 className="text-lg font-semibold mb-2">Neutral Vendor</h3>
                   <p className="text-muted-foreground">
-                    Trova un partner neutrale per coordinare più fornitori di staffing.
+                    Trova un partner neutrale per coordinare più Agenzie per il Lavoro.
                   </p>
                 </div>
               </div>
@@ -232,7 +232,7 @@ const Tender: React.FC = () => {
               Inizia Ora con AirStaff Tender
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Pubblica il tuo primo tender e ricevi proposte dalle migliori staffing agencies in pochi giorni.
+              Pubblica il tuo primo tender e ricevi proposte dalle migliori Agenzie per il Lavoro in pochi giorni.
             </p>
             <GradientButton 
               onClick={() => window.location.href = 'mailto:hello@airstaff.it'}

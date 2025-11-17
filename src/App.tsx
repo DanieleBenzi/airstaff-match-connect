@@ -14,6 +14,7 @@ import ApriPosizione from "./pages/ApriPosizione";
 import VendorManagement from "./pages/VendorManagement";
 import WorkforceManagement from "./pages/WorkforceManagement";
 import Tender from "./pages/Tender";
+import Marketplace from "./pages/Marketplace";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/vendor-management" element={<VendorManagement />} />
             <Route path="/workforce-management" element={<WorkforceManagement />} />
             <Route path="/tender" element={<Tender />} />
+            <Route path="/marketplace" element={<Marketplace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

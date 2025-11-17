@@ -9,8 +9,8 @@ const VendorManagement: React.FC = () => {
   const features = [
     {
       icon: <TrendingUp className="w-12 h-12 text-primary" />,
-      title: "Job Request alle Staffing",
-      description: "Apri una posizione e inviala con un solo click alle Agenzie del Lavoro presenti nel circuito AirStaff. Risparmia tempo e aumenta l'efficienza.",
+      title: "Job Request alle Agenzie per il Lavoro",
+      description: "Apri una posizione e inviala con un solo click alle Agenzie per il Lavoro presenti nel circuito AirStaff. Risparmia tempo e aumenta l'efficienza.",
     },
     {
       icon: <FileText className="w-12 h-12 text-primary" />,
@@ -20,17 +20,17 @@ const VendorManagement: React.FC = () => {
     {
       icon: <Users className="w-12 h-12 text-primary" />,
       title: "Revisione Candidati con AI",
-      description: "L'AI di AirStaff analizza i CV ricevuti dalle staffing agencies ed estrae automaticamente i profili più in linea con le tue esigenze.",
+      description: "L'AI di AirStaff analizza i CV ricevuti dalle Agenzie per il Lavoro ed estrae automaticamente i profili più in linea con le tue esigenze.",
     },
     {
       icon: <BarChart3 className="w-12 h-12 text-primary" />,
-      title: "Performance delle Staffing",
-      description: "Monitora le performance di tutte le agenzie del lavoro con cui collabori. Identifica i partner migliori e ottimizza le tue scelte.",
+      title: "Performance delle Agenzie per il Lavoro",
+      description: "Monitora le performance di tutte le Agenzie per il Lavoro con cui collabori. Identifica i partner migliori e ottimizza le tue scelte.",
     },
     {
       icon: <DollarSign className="w-12 h-12 text-primary" />,
       title: "Gestione Fatture",
-      description: "Raccolta automatica dei dati per generare fatture accurate. Riduci gli errori e semplifica il processo di fatturazione tra staffing e aziende.",
+      description: "Raccolta automatica dei dati per generare fatture accurate. Riduci gli errori e semplifica il processo di fatturazione tra Agenzie per il Lavoro e aziende.",
     },
     {
       icon: <FileCheck className="w-12 h-12 text-primary" />,
@@ -40,7 +40,7 @@ const VendorManagement: React.FC = () => {
     {
       icon: <BarChart3 className="w-12 h-12 text-primary" />,
       title: "Business Intelligence Completa",
-      description: "Dashboard completa con i KPI principali per monitorare le performance delle staffing agencies e dei lavoratori in tempo reale.",
+      description: "Dashboard completa con i KPI principali per monitorare le performance delle Agenzie per il Lavoro e dei lavoratori in tempo reale.",
     },
     {
       icon: <Plug className="w-12 h-12 text-primary" />,
@@ -150,7 +150,7 @@ const VendorManagement: React.FC = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Decisioni Basate sui Dati</h3>
                   <p className="text-muted-foreground">
-                    Accedi a analytics in tempo reale per identificare le migliori staffing agencies e ottimizzare i costi.
+                    Accedi a analytics in tempo reale per identificare le migliori Agenzie per il Lavoro e ottimizzare i costi.
                   </p>
                 </div>
               </div>
@@ -180,7 +180,7 @@ const VendorManagement: React.FC = () => {
         <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-primary/10 to-purple-600/10">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Pronto a Rivoluzionare la Gestione delle Tue Staffing?
+              Pronto a Rivoluzionare la Gestione delle Tue Agenzie per il Lavoro?
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Scopri come il VMS di AirStaff può trasformare il modo in cui gestisci le agenzie del lavoro.
