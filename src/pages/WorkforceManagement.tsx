@@ -15,7 +15,7 @@ const WorkforceManagement: React.FC = () => {
     {
       icon: <MapPin className="w-12 h-12 text-primary" />,
       title: "Monitoraggio in Tempo Reale",
-      description: "Visualizza chi sta lavorando dove in tempo reale. Aziende e staffing agencies possono controllare le presenze istantaneamente.",
+      description: "Visualizza chi sta lavorando dove in tempo reale. Aziende e Agenzie per il Lavoro possono controllare le presenze istantaneamente.",
     },
     {
       icon: <Settings className="w-12 h-12 text-primary" />,
