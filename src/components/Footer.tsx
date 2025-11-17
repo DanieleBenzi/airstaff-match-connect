@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer: React.FC = () => {
   return <footer className="bg-gray-900 text-white px-6 md:px-12 lg:px-24 py-[30px]">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <Logo className="mb-6" />
             <p className="text-white mb-6">
@@ -25,11 +25,17 @@ const Footer: React.FC = () => {
                 <Link to="/" className="text-white hover:text-white transition-colors">Home</Link>
               </li>
               <li>
-                <Link to="/faq" className="text-white hover:text-white transition-colors">Domande frequenti</Link>
+                <Link to="/apri-posizione" className="text-white hover:text-white transition-colors">Apri una posizione</Link>
               </li>
               <li>
-                <Link to="/apri-posizione" className="text-white hover:text-white transition-colors">Apri una posizione - GRATIS</Link>
+                <Link to="/faq" className="text-white hover:text-white transition-colors">Domande frequenti</Link>
               </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold mb-6 text-white">Soluzioni</h3>
+            <ul className="space-y-3">
               <li>
                 <Link to="/vendor-management" className="text-white hover:text-white transition-colors">VMS - Vendor Management</Link>
               </li>
