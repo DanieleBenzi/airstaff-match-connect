@@ -74,10 +74,10 @@ const WorkforceManagement: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <GradientButton 
-                onClick={() => window.location.href = 'mailto:hello@airstaff.it'}
+                onClick={() => window.location.href = 'https://calendly.com/airstaff_ita/30min'}
                 className="px-8 py-4 text-lg"
               >
-                Richiedi una Demo
+                Prenota una Demo
               </GradientButton>
             </div>
           </div>
@@ -211,12 +211,14 @@ const WorkforceManagement: React.FC = () => {
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Scopri come il WMS di AirStaff può ottimizzare la gestione dei tuoi lavoratori.
             </p>
-            <GradientButton 
-              onClick={() => window.location.href = 'mailto:hello@airstaff.it'}
-              className="px-8 py-4 text-lg"
-            >
-              Contattaci Ora
-            </GradientButton>
+            <div className="flex justify-center">
+              <GradientButton 
+                onClick={() => window.location.href = 'mailto:hello@airstaff.it'}
+                className="px-8 py-4 text-lg"
+              >
+                Contattaci Ora
+              </GradientButton>
+            </div>
           </div>
         </section>
 

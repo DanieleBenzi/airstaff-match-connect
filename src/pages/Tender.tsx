@@ -105,7 +105,7 @@ const Tender: React.FC = () => {
                 onClick={() => window.location.href = 'mailto:hello@airstaff.it'}
                 className="px-8 py-4 text-lg"
               >
-                Pubblica un Tender
+                Contattaci
               </GradientButton>
             </div>
           </div>
@@ -238,7 +238,7 @@ const Tender: React.FC = () => {
               onClick={() => window.location.href = 'mailto:hello@airstaff.it'}
               className="px-8 py-4 text-lg"
             >
-              Pubblica Tender Gratuito
+              Contattaci
             </GradientButton>
           </div>
         </section>

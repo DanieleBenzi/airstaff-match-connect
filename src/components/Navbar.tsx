@@ -54,21 +54,7 @@ const Navbar: React.FC = () => {
                     >
                       Tender
                     </Link>
-                  </div>
-                  <Link 
-                    to="/apri-posizione" 
-                    className="text-lg font-medium text-gray-700 hover:text-airstaff-pink transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Apri una posizione
-                  </Link>
-                  <Link 
-                    to="/faq" 
-                    className="text-lg font-medium text-gray-700 hover:text-airstaff-pink transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Domande frequenti
-                  </Link>
+                   </div>
                 </nav>
               </SheetContent>
             </Sheet>
@@ -140,12 +126,6 @@ const Navbar: React.FC = () => {
             </NavigationMenuList>
           </NavigationMenu>
           
-          <Link to="/apri-posizione" className="text-gray-700 hover:text-airstaff-pink font-medium transition-colors">
-            Apri una posizione
-          </Link>
-          <Link to="/faq" className="text-gray-700 hover:text-airstaff-pink font-medium transition-colors">
-            Domande frequenti
-          </Link>
           <a href="https://app.airstaff.it/guest/search-talents" target="_blank" rel="noopener noreferrer" className="block">
             <GradientButton>
               Accedi
