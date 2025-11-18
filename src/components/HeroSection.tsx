@@ -90,15 +90,11 @@ const HeroSection: React.FC = () => {
         {/* Hero Content - Centered */}
         <div className="text-center space-y-8 mb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-            Trova i migliori{' '}
+            Ricerca lavoratori e assunzioni -{' '}
             <span className="bg-gradient-to-r from-airstaff-blue to-airstaff-pink bg-clip-text text-transparent">
-              lavoratori per la tua azienda
+              in un'unica piattaforma
             </span>
           </h1>
-          
-          <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            Riduci del 50% i tempi di assunzione: AirStaff è il motore di ricerca che collega la tua azienda a 20+ Agenzie per il Lavoro specializzate: come uno Skyscanner dei candidati, ti mostriamo tutti i profili disponibili in un unico posto
-          </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
