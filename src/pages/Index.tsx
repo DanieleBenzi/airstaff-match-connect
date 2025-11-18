@@ -2,14 +2,12 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import HowItWorks from '@/components/HowItWorks';
-import MainFeatures from '@/components/MainFeatures';
-import SalesCallSection from '@/components/SalesCallSection';
-import Benefits from '@/components/Benefits';
-import Footer from '@/components/Footer';
 import StaffingPartners from '@/components/StaffingPartners';
+import SolutionsSection from '@/components/SolutionsSection';
+import ComparisonSection from '@/components/ComparisonSection';
+import Benefits from '@/components/Benefits';
 import BookDemoSection from '@/components/BookDemoSection';
-import SectorsStats from '@/components/SectorsStats';
+import Footer from '@/components/Footer';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
@@ -66,14 +64,12 @@ const Index: React.FC = () => {
       <Navbar />
       <main className="flex-grow">
         <HeroSection />
-        <SectorsStats />
-        <HowItWorks />
-        <MainFeatures />
-        <SalesCallSection />
+        <StaffingPartners />
+        <SolutionsSection />
+        <ComparisonSection />
         <Benefits />
         <BookDemoSection />
-        <StaffingPartners />
-        <div className="text-center py-8 bg-gray-50">
+        <div className="text-center py-12 bg-gray-50">
           <p className="text-lg text-gray-600">
             <span className="font-bold">Hai domande?</span>
             <br />
