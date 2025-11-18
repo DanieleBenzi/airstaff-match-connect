@@ -234,12 +234,14 @@ const Tender: React.FC = () => {
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Pubblica il tuo primo tender e ricevi proposte dalle migliori Agenzie per il Lavoro in pochi giorni.
             </p>
-            <GradientButton 
-              onClick={() => window.location.href = 'mailto:hello@airstaff.it'}
-              className="px-8 py-4 text-lg"
-            >
-              Contattaci
-            </GradientButton>
+            <div className="flex justify-center">
+              <GradientButton 
+                onClick={() => window.location.href = 'mailto:hello@airstaff.it'}
+                className="px-8 py-4 text-lg"
+              >
+                Contattaci
+              </GradientButton>
+            </div>
           </div>
         </section>
 
