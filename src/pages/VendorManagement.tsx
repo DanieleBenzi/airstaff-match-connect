@@ -190,7 +190,7 @@ const VendorManagement: React.FC = () => {
                 onClick={() => window.location.href = 'mailto:hello@airstaff.it'}
                 className="px-8 py-4 text-lg"
               >
-                Contattaci Ora
+                Contattaci
               </GradientButton>
             </div>
           </div>
