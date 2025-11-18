@@ -90,7 +90,7 @@ const HeroSection: React.FC = () => {
         {/* Hero Content - Centered */}
         <div className="text-center space-y-8 mb-16">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-            Ricerca lavoratori e assunzioni -{' '}
+            Ricerca lavoratori e gestisci le assunzioni{' '}
             <span className="bg-gradient-to-r from-airstaff-blue to-airstaff-pink bg-clip-text text-transparent">
               in un'unica piattaforma
             </span>
