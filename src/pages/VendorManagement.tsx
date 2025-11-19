@@ -180,10 +180,10 @@ const VendorManagement: React.FC = () => {
         <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-primary/10 to-purple-600/10">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Pronto a Rivoluzionare la Gestione delle Tue Agenzie per il Lavoro?
+              Pronto a rivoluzionare la gestione della tua azienda?
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Scopri come il VMS di AirStaff può trasformare il modo in cui gestisci le agenzie del lavoro.
+              Scopri come il VMS di AirStaff può aiutarti nella gestione delle agenzie per il lavoro 💪
             </p>
             <div className="flex justify-center">
               <GradientButton 
