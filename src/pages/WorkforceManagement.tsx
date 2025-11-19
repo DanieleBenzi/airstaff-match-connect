@@ -206,17 +206,17 @@ const WorkforceManagement: React.FC = () => {
         <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-primary/10 to-purple-600/10">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Semplifica la Gestione della Tua Forza Lavoro
+              Semplifica la gestione della Tua forza lavoro
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Scopri come il WMS di AirStaff può ottimizzare la gestione dei tuoi lavoratori.
+              Scopri come il WMS di AirStaff può ottimizzare la gestione dei tuoi lavoratori 👷
             </p>
             <div className="flex justify-center">
               <GradientButton 
                 onClick={() => window.location.href = 'mailto:hello@airstaff.it'}
                 className="px-8 py-4 text-lg"
               >
-                Contattaci
+                Parliamo
               </GradientButton>
             </div>
           </div>
